@@ -1,0 +1,138 @@
+body {
+
+}
+
+a {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 0.9rem;
+}
+
+a:hover {
+  color: $logo-color-2 !important;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif !important;
+  }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 800;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.main-container {
+  //background: $nav-bar-color;
+  border: $panel-border-size $panel-border-style $nav-bar-color;
+  //height: 4.5em;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+.header {
+  padding: 0 !important;
+}
+
+.top-bar {
+  background: $nav-bar-color;
+  border-radius: 10px 10px 10px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+  height: 4.5em;
+}
+
+.top-bar-section {
+  margin-top: 10px;
+}
+
+.logo {
+  float:left;
+}
+
+.logo h1 {
+  position: relative;
+  left: 20px;
+  display: inline;
+}
+
+span.logo-left {
+  color: $white;
+}
+
+span.logo-right {
+  color: $logo-color-2;
+}
+
+.link-top-menu {
+  color: $white !important;
+  background-color: $nav-bar-color !important;
+}
+
+.landing-item {
+  display: inline-block;
+  margin-top: 50px !important;
+  padding: 20px;
+}
+
+.app-icon {
+  border: $panel-border-size $panel-border-style #cccccc;
+  border-radius: $global-radius;
+  -webkit-border-radius:$global-radius;
+  -moz-border-radius:$global-radius;
+  -o-border-radius:$global-radius;
+  //padding: 20px;
+  max-width: 900px !important;
+}
+
+.app-icon .overlay-click{
+  border-radius: $global-radius;
+  position: absolute;
+  top: 90px;
+  left: 15px;
+  width: 900px;
+  height: 300px;
+  background: $overlay-color;
+  cursor: pointer !important;
+  opacity:0;
+}
+.app-icon:hover .overlay-click { opacity:0.1; }
+
+.app-icon a img {
+  max-width: 900px;
+  max-height: 300px;
+  border-radius: $global-radius;
+}
+
+footer {
+  margin-top: 20px !important;
+  background: $nav-bar-color;
+  border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+  height: 4.5em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer .content {
+  padding: 0 !important;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 20px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 800 !important;
+  font-size: 0.9rem;
+  color: $logo-color-2 !important;
+}
