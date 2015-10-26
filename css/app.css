@@ -9735,6 +9735,11 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 1, ../scss/_custom.scss */
+body {
+  background-image: url("../img/rockywall.png");
+}
+
 /* line 5, ../scss/_custom.scss */
 a {
   font-family: 'Open Sans', sans-serif !important;
@@ -9768,12 +9773,13 @@ h4 {
 
 /* line 31, ../scss/_custom.scss */
 .main-container {
+  background: #FFFFFF;
   border: 1px solid #3C60B3;
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 20px auto 20px;
 }
 
 /* line 42, ../scss/_custom.scss */

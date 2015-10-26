@@ -1,5 +1,5 @@
 body {
-
+ background-image: url('../img/rockywall.png');
 }
 
 a {
@@ -29,14 +29,14 @@ h4 {
 }
 
 .main-container {
-  //background: $nav-bar-color;
+  background: $white;
   border: $panel-border-size $panel-border-style $nav-bar-color;
   //height: 4.5em;
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
   max-width: 1000px;
-  margin:0 auto;
+  margin: 20px auto 20px;
 }
 
 .header {
