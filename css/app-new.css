@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../scss/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 16, ../scss/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 19, ../scss/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../scss/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 25, ../scss/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 29, ../scss/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 34, ../scss/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 38, ../scss/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*generics*/
+/* line 5, ../scss/app-new.scss */
+body {
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  line-height: normal;
+}
+
+/* line 9, ../scss/app-new.scss */
+a {
+  text-decoration: none;
+}
+
+/* header */
+/* line 14, ../scss/app-new.scss */
+.header {
+  width: 100%;
+  background-color: #ececec;
+  height: 2.5em;
+  border-bottom: 1px solid #cdcdcd;
+}
+/* line 20, ../scss/app-new.scss */
+.header .logo {
+  display: inline;
+}
+/* line 22, ../scss/app-new.scss */
+.header .logo img {
+  padding-top: 7px;
+  padding-left: 20px;
+}
+/* line 28, ../scss/app-new.scss */
+.header nav {
+  float: right;
+  height: 100%;
+}
+/* line 31, ../scss/app-new.scss */
+.header nav .tags li {
+  font-style: italic;
+  color: #923b30;
+  border-left: 1px solid #cdcdcd;
+  float: left;
+  height: 1.26em;
+  padding: 10px;
+  overflow: hidden;
+}
+/* line 39, ../scss/app-new.scss */
+.header nav .tags li:hover {
+  background-color: #fff;
+  border-left: 1px solid #cdcdcd;
+}
+
+/* line 47, ../scss/app-new.scss */
+div.portfolio-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 41px;
+}
+/* line 53, ../scss/app-new.scss */
+div.portfolio-wrapper div.portfolio-item {
+  float: left;
+  width: 32.5%;
+  margin-bottom: 41px;
+  text-align: center;
+  height: 300px;
+}
+/* line 63, ../scss/app-new.scss */
+div.portfolio-wrapper div.portfolio-item .title {
+  color: #923b30;
+}
+/* line 67, ../scss/app-new.scss */
+div.portfolio-wrapper div.portfolio-item .abstract {
+  width: 12em;
+  margin: 10px auto;
+}
+/* line 73, ../scss/app-new.scss */
+div.portfolio-wrapper div.portfolio-item .round img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid #ececec;
+}
+@media screen and (max-width: 768px) {
+  /* line 53, ../scss/app-new.scss */
+  div.portfolio-wrapper div.portfolio-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 53, ../scss/app-new.scss */
+  div.portfolio-wrapper div.portfolio-item {
+    width: 100%;
+  }
+}
+
+/* line 91, ../scss/app-new.scss */
+section.about {
+  width: 50%;
+  margin: 0 auto;
+  clear: both;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top: 2px solid #ececec;
+}
+
+/* line 101, ../scss/app-new.scss */
+footer {
+  background-color: #ececec;
+  height: 2.5em;
+  border-top: 1px solid #cdcdcd;
+}
+/* line 105, ../scss/app-new.scss */
+footer ul {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.5em;
+}
+/* line 109, ../scss/app-new.scss */
+footer ul li {
+  text-align: center;
+  width: 31%;
+  float: left;
+  font-style: italic;
+  font-size: 1em;
+}
+@media screen and (max-width: 768px) {
+  /* line 105, ../scss/app-new.scss */
+  footer ul {
+    width: 74%;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 105, ../scss/app-new.scss */
+  footer ul {
+    width: 100%;
+  }
+}

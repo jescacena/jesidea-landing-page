@@ -55,7 +55,7 @@
 // $rem-base: 16px;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
-@import 'foundation/functions';
+//@import 'foundation/functions';
 
 // The default font-size is set to 100% of the browser style sheet (usually 16px)
 // for compatibility with browser-based text zoom or user-set defaults.
@@ -116,7 +116,7 @@ $white       : #FFFFFF;
 // $black       : #000000;
 
 // We use these as default colors throughout
-// $primary-color: #008CBA;
+$primary-color: #923b30;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -126,6 +126,8 @@ $logo-color: #204CB2;
 $logo-color-2: #FFDF00;
 $nav-bar-color: #3C60B3;
 $overlay-color: #FCE437;
+$bg-primary-color: #ececec;
+$bg-secondary-color: #cdcdcd;
 
 // We use these to control various global styles
 // $body-bg: $white;

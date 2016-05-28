@@ -1,0 +1,127 @@
+@import "reset";
+@import "settings";
+
+/*generics*/
+body {
+  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  line-height: normal;
+}
+a {
+  text-decoration: none;
+}
+
+/* header */
+.header {
+  width:100%;
+  background-color: $bg-primary-color;
+  height: 2.5em;
+  border-bottom: 1px solid $bg-secondary-color;
+
+  .logo {
+      display:inline;
+      img {
+        padding-top:7px;
+        padding-left:20px;
+      }
+  }
+
+  nav {
+    float:right;
+    height:100%;
+    .tags li {
+      font-style: italic;
+      color: $primary-color;
+      border-left:1px solid $bg-secondary-color;
+      float: left;
+      height: 1.26em;
+      padding: 10px;
+      overflow:hidden;
+      &:hover {
+        background-color: #fff;
+        border-left:1px solid $bg-secondary-color;
+      }
+    }
+  }
+}
+
+div.portfolio-wrapper {
+  max-width: 1000px;
+  margin:0 auto;
+  margin-top:41px;
+
+
+  div.portfolio-item {
+    // background-color: $bg-primary-color;
+    float:left;
+    width:32.5%;
+    margin-bottom:41px;
+    text-align: center;
+    height:300px;
+    // border:1px solid black;
+
+
+    .title {
+      color: $primary-color;
+    }
+
+    .abstract {
+      width: 12em;
+      margin: 10px auto;
+    }
+
+    .round {
+      img {
+        width:200px;
+        height:200px;
+        border-radius: 50%;
+        border: 2px solid $bg-primary-color;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 100%;
+    }
+  }
+}
+
+section.about {
+  width:50%;
+  margin:0 auto;
+  clear:both;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  border-top:2px solid $bg-primary-color;
+}
+
+footer {
+  background-color: $bg-primary-color;
+  height: 2.5em;
+  border-top: 1px solid $bg-secondary-color;
+  ul {
+    width:50%;
+    margin:0 auto;
+    padding:0.5em;
+    li {
+      text-align: center;
+      width: 31%;
+      float:left;
+      font-style: italic;
+      font-size: 1em;
+    }
+    @media screen and (max-width: 768px) {
+      width: 74%;
+    }
+
+    @media screen and (max-width: 320px) {
+      width: 100%;
+    }
+
+  }
+
+
+}
