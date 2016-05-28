@@ -131,20 +131,20 @@ div.portfolio-wrapper div.portfolio-item .round img {
   border-radius: 50%;
   border: 2px solid #ececec;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   /* line 53, ../scss/app-new.scss */
   div.portfolio-wrapper div.portfolio-item {
     width: 50%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 640px) {
   /* line 53, ../scss/app-new.scss */
   div.portfolio-wrapper div.portfolio-item {
     width: 100%;
   }
 }
 
-/* line 91, ../scss/app-new.scss */
+/* line 92, ../scss/app-new.scss */
 section.about {
   width: 50%;
   margin: 0 auto;
@@ -155,19 +155,19 @@ section.about {
   border-top: 2px solid #ececec;
 }
 
-/* line 101, ../scss/app-new.scss */
+/* line 102, ../scss/app-new.scss */
 footer {
   background-color: #ececec;
   height: 2.5em;
   border-top: 1px solid #cdcdcd;
 }
-/* line 105, ../scss/app-new.scss */
+/* line 106, ../scss/app-new.scss */
 footer ul {
   width: 50%;
   margin: 0 auto;
   padding: 0.5em;
 }
-/* line 109, ../scss/app-new.scss */
+/* line 110, ../scss/app-new.scss */
 footer ul li {
   text-align: center;
   width: 31%;
@@ -175,14 +175,14 @@ footer ul li {
   font-style: italic;
   font-size: 1em;
 }
-@media screen and (max-width: 768px) {
-  /* line 105, ../scss/app-new.scss */
+@media screen and (max-width: 1024px) {
+  /* line 106, ../scss/app-new.scss */
   footer ul {
     width: 74%;
   }
 }
-@media screen and (max-width: 320px) {
-  /* line 105, ../scss/app-new.scss */
+@media screen and (max-width: 640px) {
+  /* line 106, ../scss/app-new.scss */
   footer ul {
     width: 100%;
   }
