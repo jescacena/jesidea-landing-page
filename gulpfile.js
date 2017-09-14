@@ -4,21 +4,43 @@ var connect = require('gulp-connect');
 var prompt = require('gulp-prompt');
 var gutil = require('gulp-util');
 var minifyCss = require('gulp-minify-css');
+var useref = require('gulp-useref');
 var uglify = require('gulp-uglify');
+var hash = require('gulp-hash');
 var imagemin = require('gulp-imagemin');
 var fs = require('fs');
 var path = require('path');
 var pngquant = require('imagemin-pngquant');
 var replace = require('gulp-replace');
+var revReplace = require('gulp-rev-replace');
+var rev = require('gulp-rev');
+var filter = require('gulp-filter');
+var runSequence = require('run-sequence');
 
-gulp.task('js-libs-copy', function() {
-    return gulp.src(['bower_components/jquery/dist/jquery.min.js', 'bower_components/foundation/js/foundation.min.js'])
-        .pipe(gulp.dest('dist/js'));
+
+gulp.task("build-assets", function() {
+  var jsFilter = filter("js/**/*.js", { restore: true });
+  var cssFilter = filter("css/**/*.css", { restore: true });
+  var nonIndexHtmlFilter = filter(['**/*', '!**/index.html'], { restore: true });
+
+  return gulp.src("./index.html")
+    .pipe(useref())      // Concatenate with gulp-useref
+    .pipe(jsFilter)
+    .pipe(uglify())             // Minify any javascript sources
+    .pipe(jsFilter.restore)
+    .pipe(cssFilter)
+    .pipe(minifyCss({compatibility: 'ie8'}))
+    .pipe(cssFilter.restore)
+    .pipe(nonIndexHtmlFilter)
+    .pipe(rev())                // Rename the concatenated files (but not index.html)
+    .pipe(nonIndexHtmlFilter.restore)
+    .pipe(revReplace())         // Substitute in new filenames
+    .pipe(gulp.dest('dist'));
 });
 
-gulp.task('js-build', function() {
-    return gulp.src('js/*.js')
-        .pipe(uglify())
+gulp.task('js-libs-copy', function() {
+    return gulp.src(['bower_components/jquery/dist/jquery.min.js',
+    'bower_components/foundation/js/foundation.min.js'])
         .pipe(gulp.dest('dist/js'));
 });
 
@@ -32,14 +54,8 @@ gulp.task('image-build', function() {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('css-build', function() {
-    return gulp.src('css/*.css')
-        .pipe(minifyCss({compatibility: 'ie8'}))
-        .pipe(gulp.dest('dist/css'));
-});
-
-gulp.task('build:dist', ['js-build', 'js-libs-copy','css-build', 'image-build'],  function() {
-    gulp.src('*.html')
+gulp.task('build:dist', ['build-assets', 'js-libs-copy', 'image-build'],  function() {
+    gulp.src('dist/index.html')
         .pipe(replace('bower_components/jquery/dist/', 'js/'))
         .pipe(replace('bower_components/foundation/js/', 'js/'))
         .pipe(gulp.dest('dist'));

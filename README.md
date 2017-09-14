@@ -12,18 +12,23 @@
 
   * Run `sudo npm install` to install npm packages
   * Run `bower install` to install bower dependencies
-  
+
 Then when you're working on your project, just run the following command to compile SASS files into css:
 ```bash
 compass watch
 ```
-## Deploy (try it smart friend ;P)
+Run local web server with
+```bash
+php -S localhost:8080
+```
+
+## Deploy
 
 ```bash
 gulp deploy
 ```
 
- 
+
 # Foundation Compass Template
 
 The easiest way to get started with Foundation + Compass.
@@ -39,7 +44,7 @@ The easiest way to get started with Foundation + Compass.
 
   * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
   * Run `bower install` to install the latest version of Foundation
-  
+
 Then when you're working on your project, just run the following command:
 
 ```bash
