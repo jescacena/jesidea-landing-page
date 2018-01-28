@@ -163,27 +163,44 @@ footer {
 }
 /* line 106, ../scss/app-new.scss */
 footer ul {
-  width: 50%;
+  text-align: center;
+  width: 13%;
   margin: 0 auto;
   padding: 0.5em;
-}
-/* line 110, ../scss/app-new.scss */
-footer ul li {
-  text-align: center;
-  width: 31%;
-  float: left;
-  font-style: italic;
-  font-size: 1em;
 }
 @media screen and (max-width: 1024px) {
   /* line 106, ../scss/app-new.scss */
   footer ul {
-    width: 74%;
+    width: 58%;
   }
 }
 @media screen and (max-width: 640px) {
   /* line 106, ../scss/app-new.scss */
   footer ul {
-    width: 100%;
+    width: 58%;
   }
+}
+/* line 118, ../scss/app-new.scss */
+footer ul li {
+  width: 49%;
+  float: left;
+  font-style: italic;
+  font-size: 1em;
+}
+/* line 119, ../scss/app-new.scss */
+footer ul li:first-child {
+  text-align: left;
+}
+/* line 122, ../scss/app-new.scss */
+footer ul li:nth-child(2) {
+  text-align: right;
+}
+/* line 133, ../scss/app-new.scss */
+footer .copyright {
+  display: block;
+  width: 100%;
+  text-align: center;
+  clear: both;
+  margin-top: 4em;
+  font-size: 0.7em;
 }
