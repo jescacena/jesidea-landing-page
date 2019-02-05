@@ -51,41 +51,200 @@ table {
   border-spacing: 0;
 }
 
+/* line 9, ../scss/_lightbox.scss */
+.wiggle:hover {
+  -webkit-animation: none;
+}
+
+/* line 13, ../scss/_lightbox.scss */
+.short-animate {
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -ms-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+/* line 21, ../scss/_lightbox.scss */
+.long-animate {
+  -webkit-transition: .5s .5s ease-in-out;
+  -moz-transition: .5s .5s ease-in-out;
+  -ms-transition: .5s .5s ease-in-out;
+  -o-transition: .5s .5s ease-in-out;
+  transition: .5s .5s ease-in-out;
+}
+
+/* line 29, ../scss/_lightbox.scss */
+.lightbox {
+  position: fixed;
+  top: -100%;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background: #984447;
+  z-index: 501;
+  opacity: 0;
+}
+
+/* line 40, ../scss/_lightbox.scss */
+.lightbox img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 0%;
+  max-height: 0%;
+}
+
+/* line 51, ../scss/_lightbox.scss */
+#lightbox-controls {
+  position: fixed;
+  height: 70px;
+  width: 70px;
+  top: -70px;
+  right: 0;
+  z-index: 502;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* line 61, ../scss/_lightbox.scss */
+#close-lightbox {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  text-indent: -5000px;
+  right: 10px;
+  top: 10px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* line 77, ../scss/_lightbox.scss */
+#close-lightbox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0px;
+  width: 3px;
+  left: 24px;
+  top: 0;
+  background: white;
+  border-radius: 2px;
+  -webkit-transition: .5s .5s ease-in-out;
+  -moz-transition: .5s .5s ease-in-out;
+  -ms-transition: .5s .5s ease-in-out;
+  -o-transition: .5s .5s ease-in-out;
+  transition: .5s .5s ease-in-out;
+}
+
+/* line 94, ../scss/_lightbox.scss */
+#close-lightbox:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  top: 24px;
+  left: 0;
+  background: white;
+  border-radius: 2px;
+  -webkit-transition: .5s 1s ease-in-out;
+  -moz-transition: .5s 1s ease-in-out;
+  -ms-transition: .5s 1s ease-in-out;
+  -o-transition: .5s 1s ease-in-out;
+  transition: .5s 1s ease-in-out;
+}
+
+/* line 111, ../scss/_lightbox.scss */
+.lightbox:target {
+  top: 0%;
+  bottom: 0%;
+  opacity: 1;
+}
+
+/* line 117, ../scss/_lightbox.scss */
+.lightbox:target img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 122, ../scss/_lightbox.scss */
+.lightbox:target ~ #lightbox-controls {
+  top: 0px;
+}
+
+/* line 126, ../scss/_lightbox.scss */
+.lightbox:target ~ #lightbox-controls #close-lightbox:after {
+  width: 50px;
+}
+
+/* line 130, ../scss/_lightbox.scss */
+.lightbox:target ~ #lightbox-controls #close-lightbox:before {
+  height: 50px;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(2deg);
+  }
+  20% {
+    -webkit-transform: rotate(-2deg);
+  }
+  40% {
+    -webkit-transform: rotate(2deg);
+  }
+  60% {
+    -webkit-transform: rotate(-2deg);
+  }
+  80% {
+    -webkit-transform: rotate(2deg);
+  }
+  100% {
+    -webkit-transform: rotate(-2deg);
+  }
+}
 /*generics*/
-/* line 5, ../scss/app-new.scss */
+/* line 6, ../scss/app-new.scss */
 body {
   font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
   line-height: normal;
 }
 
-/* line 9, ../scss/app-new.scss */
+/* line 11, ../scss/app-new.scss */
 a {
   text-decoration: none;
 }
 
 /* header */
-/* line 14, ../scss/app-new.scss */
+/* line 16, ../scss/app-new.scss */
 .header {
   width: 100%;
   background-color: #ececec;
   height: 2.5em;
   border-bottom: 1px solid #cdcdcd;
 }
-/* line 20, ../scss/app-new.scss */
+/* line 22, ../scss/app-new.scss */
 .header .logo {
   display: inline;
 }
-/* line 22, ../scss/app-new.scss */
+/* line 25, ../scss/app-new.scss */
 .header .logo img {
   padding-top: 7px;
   padding-left: 20px;
 }
-/* line 28, ../scss/app-new.scss */
+/* line 31, ../scss/app-new.scss */
 .header nav {
   float: right;
   height: 100%;
 }
-/* line 31, ../scss/app-new.scss */
+/* line 35, ../scss/app-new.scss */
 .header nav .tags li {
   font-style: italic;
   color: #923b30;
@@ -95,56 +254,195 @@ a {
   padding: 10px;
   overflow: hidden;
 }
-/* line 39, ../scss/app-new.scss */
+/* line 44, ../scss/app-new.scss */
 .header nav .tags li:hover {
   background-color: #fff;
   border-left: 1px solid #cdcdcd;
 }
 
-/* line 47, ../scss/app-new.scss */
-div.portfolio-wrapper {
+/* line 62, ../scss/app-new.scss */
+ul.portfolio-wrapper {
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 41px;
+  margin-left: 17rem;
 }
-/* line 53, ../scss/app-new.scss */
-div.portfolio-wrapper div.portfolio-item {
+@media screen and (max-width: 640px) {
+  /* line 62, ../scss/app-new.scss */
+  ul.portfolio-wrapper {
+    max-width: none;
+    margin-left: 1rem;
+  }
+}
+/* line 73, ../scss/app-new.scss */
+ul.portfolio-wrapper li.polaroid {
+  width: 19.5%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
   float: left;
-  width: 32.5%;
-  margin-bottom: 41px;
-  text-align: center;
-  height: 300px;
+  margin-bottom: 1rem;
 }
-/* line 63, ../scss/app-new.scss */
-div.portfolio-wrapper div.portfolio-item .title {
+@media screen and (max-width: 640px) {
+  /* line 73, ../scss/app-new.scss */
+  ul.portfolio-wrapper li.polaroid {
+    width: 46.5%;
+  }
+}
+/* line 86, ../scss/app-new.scss */
+ul.portfolio-wrapper li.polaroid:not(:nth-child(4n)) {
+  margin-right: 1rem;
+}
+@media screen and (max-width: 640px) {
+  /* line 91, ../scss/app-new.scss */
+  ul.portfolio-wrapper li.polaroid:not(:nth-child(4n)) {
+    margin-right: 0;
+  }
+  /* line 94, ../scss/app-new.scss */
+  ul.portfolio-wrapper li.polaroid:not(:nth-child(2n)) {
+    margin-right: 1rem;
+  }
+}
+/* line 99, ../scss/app-new.scss */
+ul.portfolio-wrapper li.polaroid img {
+  height: 12rem;
+}
+/* line 104, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+/* line 108, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container h2 {
+  display: inline;
+  font-size: 0.8rem;
+}
+/* line 113, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip {
+  float: right;
+  font-size: 1.2rem;
+  display: inline-block;
+  position: relative;
+}
+/* line 119, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip i {
   color: #923b30;
 }
-/* line 67, ../scss/app-new.scss */
-div.portfolio-wrapper div.portfolio-item .abstract {
+/* line 123, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #ececec;
+  color: #204CB2;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: -430%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media screen and (max-width: 640px) {
+  /* line 123, ../scss/app-new.scss */
+  ul.portfolio-wrapper div.container .tooltip .tooltiptext {
+    margin-left: -100px;
+  }
+}
+/* line 152, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: -9%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #cdcdcd transparent;
+}
+@media screen and (max-width: 640px) {
+  /* line 152, ../scss/app-new.scss */
+  ul.portfolio-wrapper div.container .tooltip .tooltiptext::after {
+    left: 83%;
+  }
+}
+/* line 166, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip .tooltiptext i {
+  color: #923b30;
+}
+/* line 170, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip .tooltiptext p {
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  color: #000;
+}
+/* line 176, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip .tooltiptext ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 0.2rem;
+}
+/* line 186, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip .tooltiptext ul li {
+  float: left;
+}
+/* line 189, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip .tooltiptext ul li:not(:last-child) {
+  margin-right: 1rem;
+}
+/* line 197, ../scss/app-new.scss */
+ul.portfolio-wrapper div.container .tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+/* line 205, ../scss/app-new.scss */
+ul.portfolio-wrapper div.portfolio-item {
+  background-color: #ececec;
+  float: left;
+  width: 19.5%;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  height: 300px;
+  border: 1px solid black;
+  padding: 1rem;
+}
+/* line 216, ../scss/app-new.scss */
+ul.portfolio-wrapper div.portfolio-item .title {
+  color: #923b30;
+}
+/* line 220, ../scss/app-new.scss */
+ul.portfolio-wrapper div.portfolio-item .abstract {
   width: 12em;
   margin: 10px auto;
 }
-/* line 73, ../scss/app-new.scss */
-div.portfolio-wrapper div.portfolio-item .round img {
+/* line 226, ../scss/app-new.scss */
+ul.portfolio-wrapper div.portfolio-item .round img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   border: 2px solid #ececec;
 }
 @media screen and (max-width: 1024px) {
-  /* line 53, ../scss/app-new.scss */
-  div.portfolio-wrapper div.portfolio-item {
+  /* line 205, ../scss/app-new.scss */
+  ul.portfolio-wrapper div.portfolio-item {
     width: 50%;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 53, ../scss/app-new.scss */
-  div.portfolio-wrapper div.portfolio-item {
+  /* line 205, ../scss/app-new.scss */
+  ul.portfolio-wrapper div.portfolio-item {
     width: 100%;
   }
 }
 
-/* line 92, ../scss/app-new.scss */
+/* line 247, ../scss/app-new.scss */
 section.about {
   width: 50%;
   margin: 0 auto;
@@ -153,15 +451,16 @@ section.about {
   padding-top: 100px;
   padding-bottom: 100px;
   border-top: 2px solid #ececec;
+  color: #923b30;
 }
 
-/* line 102, ../scss/app-new.scss */
+/* line 258, ../scss/app-new.scss */
 footer {
   background-color: #ececec;
   height: 2.5em;
   border-top: 1px solid #cdcdcd;
 }
-/* line 106, ../scss/app-new.scss */
+/* line 263, ../scss/app-new.scss */
 footer ul {
   text-align: center;
   width: 13%;
@@ -169,33 +468,33 @@ footer ul {
   padding: 0.5em;
 }
 @media screen and (max-width: 1024px) {
-  /* line 106, ../scss/app-new.scss */
+  /* line 263, ../scss/app-new.scss */
   footer ul {
     width: 58%;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 106, ../scss/app-new.scss */
+  /* line 263, ../scss/app-new.scss */
   footer ul {
     width: 58%;
   }
 }
-/* line 118, ../scss/app-new.scss */
+/* line 278, ../scss/app-new.scss */
 footer ul li {
   width: 49%;
   float: left;
   font-style: italic;
   font-size: 1em;
 }
-/* line 119, ../scss/app-new.scss */
+/* line 279, ../scss/app-new.scss */
 footer ul li:first-child {
   text-align: left;
 }
-/* line 122, ../scss/app-new.scss */
+/* line 283, ../scss/app-new.scss */
 footer ul li:nth-child(2) {
   text-align: right;
 }
-/* line 133, ../scss/app-new.scss */
+/* line 294, ../scss/app-new.scss */
 footer .copyright {
   display: block;
   width: 100%;
