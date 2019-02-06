@@ -107,7 +107,10 @@ ul.portfolio-wrapper {
 
         h2 {
             display: inline;
-            font-size: 0.8rem;
+			font-size: 0.8rem;
+			@media screen and (max-width: $small-breakpoint) {
+				font-size: 0.7rem;
+			}
         }
 
         .tooltip {
