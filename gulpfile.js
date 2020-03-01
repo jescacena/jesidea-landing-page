@@ -53,8 +53,12 @@ gulp.task('image-build', function() {
         }))
         .pipe(gulp.dest('dist/img'));
 });
+gulp.task('data-copy', function() {
+    return gulp.src('data/*')
+        .pipe(gulp.dest('dist/data'));
+});
 
-gulp.task('build:dist', ['build-assets', 'js-libs-copy', 'image-build'],  function() {
+gulp.task('build:dist', ['build-assets', 'js-libs-copy', 'image-build','data-copy'],  function() {
     gulp.src('dist/index.html')
         .pipe(replace('bower_components/jquery/dist/', 'js/'))
         .pipe(replace('bower_components/foundation/js/', 'js/'))

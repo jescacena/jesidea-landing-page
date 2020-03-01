@@ -49,7 +49,7 @@ a {
     }
 }
 
-.container {
+#container {
     // position: absolute;
     // width: 90%;
     // // height: 50px;
@@ -243,6 +243,46 @@ ul.portfolio-wrapper {
 
         @media screen and (max-width: $small-breakpoint) {
             width: 100%;
+        }
+    }
+}
+
+ul.simple-list {
+    width: 46em;
+    margin-left:2em;
+    margin-bottom:2em;
+    li {
+        position:relative;
+
+        background-color: #ececec;
+        border: 1px solid lightgrey;
+        margin: 4em 1em 1em 1em;
+        h2 {
+            font-size: 1.5em;
+            position: absolute;
+            top: -1em;
+        }
+        img {
+            margin:1em;
+        }
+
+        ul.right-list {
+            float:right;
+            padding:1em 0 0 0;
+            width:23em;
+            li {
+                margin:0 0 0em 0;
+                padding-left:0em;
+                border:none;
+                &:nth-child(2) {
+                    margin:1em 0 0 0;
+                    font-size: 0.8em;;
+                }
+                &:nth-child(3) {
+                    margin:0.5em 0 0 0;
+                    font-size: 0.8em;;
+                }
+            }
         }
     }
 }
