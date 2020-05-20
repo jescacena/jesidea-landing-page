@@ -449,6 +449,52 @@ ul.portfolio-wrapper div.portfolio-item .round img {
 }
 
 /* line 250, ../scss/app-new.scss */
+ul.simple-list {
+  width: 46em;
+  margin-left: 2em;
+  margin-bottom: 2em;
+}
+/* line 254, ../scss/app-new.scss */
+ul.simple-list li {
+  position: relative;
+  background-color: #ececec;
+  border: 1px solid lightgrey;
+  margin: 4em 1em 1em 1em;
+}
+/* line 260, ../scss/app-new.scss */
+ul.simple-list li h2 {
+  font-size: 1.5em;
+  position: absolute;
+  top: -1em;
+}
+/* line 265, ../scss/app-new.scss */
+ul.simple-list li img {
+  margin: 1em;
+}
+/* line 269, ../scss/app-new.scss */
+ul.simple-list li ul.right-list {
+  float: right;
+  padding: 1em 0 0 0;
+  width: 23em;
+}
+/* line 273, ../scss/app-new.scss */
+ul.simple-list li ul.right-list li {
+  margin: 0 0 0em 0;
+  padding-left: 0em;
+  border: none;
+}
+/* line 277, ../scss/app-new.scss */
+ul.simple-list li ul.right-list li:nth-child(2) {
+  margin: 1em 0 0 0;
+  font-size: 0.8em;
+}
+/* line 281, ../scss/app-new.scss */
+ul.simple-list li ul.right-list li:nth-child(3) {
+  margin: 0.5em 0 0 0;
+  font-size: 0.8em;
+}
+
+/* line 290, ../scss/app-new.scss */
 section.about {
   width: 50%;
   margin: 0 auto;
@@ -460,13 +506,13 @@ section.about {
   color: #923b30;
 }
 
-/* line 261, ../scss/app-new.scss */
+/* line 301, ../scss/app-new.scss */
 footer {
   background-color: #ececec;
   height: 2.5em;
   border-top: 1px solid #cdcdcd;
 }
-/* line 266, ../scss/app-new.scss */
+/* line 306, ../scss/app-new.scss */
 footer ul {
   text-align: center;
   width: 13%;
@@ -474,33 +520,33 @@ footer ul {
   padding: 0.5em;
 }
 @media screen and (max-width: 1024px) {
-  /* line 266, ../scss/app-new.scss */
+  /* line 306, ../scss/app-new.scss */
   footer ul {
     width: 58%;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 266, ../scss/app-new.scss */
+  /* line 306, ../scss/app-new.scss */
   footer ul {
     width: 58%;
   }
 }
-/* line 281, ../scss/app-new.scss */
+/* line 321, ../scss/app-new.scss */
 footer ul li {
   width: 49%;
   float: left;
   font-style: italic;
   font-size: 1em;
 }
-/* line 282, ../scss/app-new.scss */
+/* line 322, ../scss/app-new.scss */
 footer ul li:first-child {
   text-align: left;
 }
-/* line 286, ../scss/app-new.scss */
+/* line 326, ../scss/app-new.scss */
 footer ul li:nth-child(2) {
   text-align: right;
 }
-/* line 297, ../scss/app-new.scss */
+/* line 337, ../scss/app-new.scss */
 footer .copyright {
   display: block;
   width: 100%;

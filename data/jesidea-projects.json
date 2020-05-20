@@ -1,0 +1,140 @@
+[
+    {
+        "title": "CODERSNACK",
+        "image": "codersnack_icon_hi_res.png",
+        "description": "Learn and review your programming skills with snacks",
+        "links": [
+            {
+                "type": "website",
+                "url": "https://codersnack.com/"
+            },
+            {
+                "type": "android-play-store",
+                "url": "https://play.google.com/store/apps/details?id=com.jes.codesnack_app"
+            }
+        ]
+    },
+    {
+        "title": "TREKIAL",
+        "image": "icon-trekial-hi-res.png",
+        "description": "A cool way of knowing your trekking routes",
+        "links": [
+            {
+                "type": "website",
+                "url": "http://jesidea.com/guquiz/landing/trekial.html"
+            },
+            {
+                "type": "android-play-store",
+                "url": "https://play.google.com/store/apps/details?id=com.jes.guquiz"
+            },
+            {
+                "type": "github-repo",
+                "url": "https://github.com/jescacena/guquiz"
+            }
+        ]
+    },
+    {
+        "title": "COMIC OLDIES",
+        "image": "icon-moapp.png",
+        "description": "Comic Oldies native app for Android",
+        "links": [
+            {
+                "type": "website",
+                "url": "http://jesidea.com/guquiz/landing/trekial.html"
+            },
+            {
+                "type": "android-play-store",
+                "url": "https://play.google.com/store/apps/details?id=com.jes.moappv2"
+            },
+            {
+                "type": "github-repo",
+                "url": "https://github.com/jescacena/moapp"
+            }
+        ]
+    },
+    {
+        "title": "INTERCAMBIADOR",
+        "image": "logo-intercambiador.png",
+        "description": "Cercedilla public transport online tool",
+        "links": [
+            {
+                "type": "website",
+                "url": "http://intercambiador.cercemap.org/"
+            },
+            {
+                "type": "website",
+                "url": "https://github.com/jescacena/mordorg-public-transport"
+            }
+        ]
+    },
+    {
+        "title": "CERCEMAP",
+        "image": "logo-cercemap.png",
+        "description": "Cercedilla map of local services and stores",
+        "links": [
+            {
+                "type": "website",
+                "url": "https://cercemap.org"
+            },
+            {
+                "type": "website",
+                "url": "https://github.com/jescacena/mordorg"
+            }
+        ]
+    },
+    {
+        "title": "PAKDB",
+        "image": "mindfullness-icon.png",
+        "description": "Just another knowledge database",
+        "links": [
+            {
+                "type": "website",
+                "url": "http://jesidea.com/pakdb/"
+            }
+        ]
+    },
+    {
+        "title": "JESITES",
+        "image": "jesites-icon.png",
+        "description": "Frontend snippets for a decent frontend",
+        "links": [
+            {
+                "type": "website",
+                "url": "http://jesidea.com/jesites/"
+            }
+        ]
+    },
+    {
+        "title": "FRONT APRENDIS",
+        "image": "logo-gitbook.png",
+        "description": "How to become a decent frontend developer",
+        "links": [
+            {
+                "type": "website",
+                "url": "https://jescacena.gitbooks.io/frontend-aprendis/content/"
+            }
+        ]
+    },
+    {
+        "title": "ARCHIVO ESCACENA SANCHEZ",
+        "image": "luna_miel_abrazo-landing-2.png",
+        "description": "Escacena Sanchez family album",
+        "links": [
+            {
+                "type": "website",
+                "url": "http://escacenas.jesidea.com/#!/landing"
+            }
+        ]
+    },
+    {
+        "title": "INDILOG",
+        "image": "logo-indilog.png",
+        "description": "Photolog for awesome thing for different ages",
+        "links": [
+            {
+                "type": "website",
+                "url": "http://jesidea.com/indilog"
+            }
+        ]
+    }
+]
