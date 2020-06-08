@@ -4,7 +4,7 @@
 ## Requirements
 
   * Ruby 1.9+
-  * [Node.js](http://nodejs.org) & npm
+  * [Node.js v11.8.0](http://nodejs.org) & npm
   * [compass](http://compass-style.org/): `gem install compass`
   * [bower](http://bower.io): `npm install bower -g`
 
