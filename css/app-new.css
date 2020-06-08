@@ -217,34 +217,34 @@ body {
   line-height: normal;
 }
 
-/* line 11, ../scss/app-new.scss */
+/* line 12, ../scss/app-new.scss */
 a {
   text-decoration: none;
 }
 
 /* header */
-/* line 16, ../scss/app-new.scss */
+/* line 17, ../scss/app-new.scss */
 .header {
   width: 100%;
   background-color: #ececec;
   height: 2.5em;
   border-bottom: 1px solid #cdcdcd;
 }
-/* line 22, ../scss/app-new.scss */
+/* line 23, ../scss/app-new.scss */
 .header .logo {
   display: inline;
 }
-/* line 25, ../scss/app-new.scss */
+/* line 26, ../scss/app-new.scss */
 .header .logo img {
   padding-top: 7px;
   padding-left: 20px;
 }
-/* line 31, ../scss/app-new.scss */
+/* line 32, ../scss/app-new.scss */
 .header nav {
   float: right;
   height: 100%;
 }
-/* line 35, ../scss/app-new.scss */
+/* line 36, ../scss/app-new.scss */
 .header nav .tags li {
   font-style: italic;
   color: #923b30;
@@ -254,13 +254,13 @@ a {
   padding: 10px;
   overflow: hidden;
 }
-/* line 44, ../scss/app-new.scss */
+/* line 45, ../scss/app-new.scss */
 .header nav .tags li:hover {
   background-color: #fff;
   border-left: 1px solid #cdcdcd;
 }
 
-/* line 62, ../scss/app-new.scss */
+/* line 63, ../scss/app-new.scss */
 ul.portfolio-wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -268,13 +268,13 @@ ul.portfolio-wrapper {
   margin-left: 17rem;
 }
 @media screen and (max-width: 640px) {
-  /* line 62, ../scss/app-new.scss */
+  /* line 63, ../scss/app-new.scss */
   ul.portfolio-wrapper {
     max-width: none;
     margin-left: 1rem;
   }
 }
-/* line 73, ../scss/app-new.scss */
+/* line 74, ../scss/app-new.scss */
 ul.portfolio-wrapper li.polaroid {
   width: 19.5%;
   background-color: white;
@@ -284,57 +284,57 @@ ul.portfolio-wrapper li.polaroid {
   margin-bottom: 1rem;
 }
 @media screen and (max-width: 640px) {
-  /* line 73, ../scss/app-new.scss */
+  /* line 74, ../scss/app-new.scss */
   ul.portfolio-wrapper li.polaroid {
     width: 46.5%;
   }
 }
-/* line 86, ../scss/app-new.scss */
+/* line 87, ../scss/app-new.scss */
 ul.portfolio-wrapper li.polaroid:not(:nth-child(4n)) {
   margin-right: 1rem;
 }
 @media screen and (max-width: 640px) {
-  /* line 91, ../scss/app-new.scss */
+  /* line 92, ../scss/app-new.scss */
   ul.portfolio-wrapper li.polaroid:not(:nth-child(4n)) {
     margin-right: 0;
   }
-  /* line 94, ../scss/app-new.scss */
+  /* line 95, ../scss/app-new.scss */
   ul.portfolio-wrapper li.polaroid:not(:nth-child(2n)) {
     margin-right: 1rem;
   }
 }
-/* line 99, ../scss/app-new.scss */
+/* line 100, ../scss/app-new.scss */
 ul.portfolio-wrapper li.polaroid img {
   height: 12rem;
 }
-/* line 104, ../scss/app-new.scss */
+/* line 105, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container {
   text-align: center;
   padding: 10px 20px;
 }
-/* line 108, ../scss/app-new.scss */
+/* line 109, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container h2 {
   display: inline;
   font-size: 0.8rem;
 }
 @media screen and (max-width: 640px) {
-  /* line 108, ../scss/app-new.scss */
+  /* line 109, ../scss/app-new.scss */
   ul.portfolio-wrapper div.container h2 {
     font-size: 0.7rem;
   }
 }
-/* line 116, ../scss/app-new.scss */
+/* line 117, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip {
   float: right;
   font-size: 1.2rem;
   display: inline-block;
   position: relative;
 }
-/* line 122, ../scss/app-new.scss */
+/* line 123, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip i {
   color: #923b30;
 }
-/* line 126, ../scss/app-new.scss */
+/* line 127, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
@@ -354,12 +354,12 @@ ul.portfolio-wrapper div.container .tooltip .tooltiptext {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media screen and (max-width: 640px) {
-  /* line 126, ../scss/app-new.scss */
+  /* line 127, ../scss/app-new.scss */
   ul.portfolio-wrapper div.container .tooltip .tooltiptext {
     margin-left: -100px;
   }
 }
-/* line 155, ../scss/app-new.scss */
+/* line 156, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -371,22 +371,22 @@ ul.portfolio-wrapper div.container .tooltip .tooltiptext::after {
   border-color: transparent transparent #cdcdcd transparent;
 }
 @media screen and (max-width: 640px) {
-  /* line 155, ../scss/app-new.scss */
+  /* line 156, ../scss/app-new.scss */
   ul.portfolio-wrapper div.container .tooltip .tooltiptext::after {
     left: 83%;
   }
 }
-/* line 169, ../scss/app-new.scss */
+/* line 170, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip .tooltiptext i {
   color: #923b30;
 }
-/* line 173, ../scss/app-new.scss */
+/* line 174, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip .tooltiptext p {
   font-size: 0.9rem;
   padding: 0.2rem;
   color: #000;
 }
-/* line 179, ../scss/app-new.scss */
+/* line 180, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip .tooltiptext ul {
   margin: 0;
   padding: 0;
@@ -395,20 +395,20 @@ ul.portfolio-wrapper div.container .tooltip .tooltiptext ul {
   position: relative;
   top: 0.2rem;
 }
-/* line 189, ../scss/app-new.scss */
+/* line 190, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip .tooltiptext ul li {
   float: left;
 }
-/* line 192, ../scss/app-new.scss */
+/* line 193, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip .tooltiptext ul li:not(:last-child) {
   margin-right: 1rem;
 }
-/* line 200, ../scss/app-new.scss */
+/* line 201, ../scss/app-new.scss */
 ul.portfolio-wrapper div.container .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
-/* line 208, ../scss/app-new.scss */
+/* line 209, ../scss/app-new.scss */
 ul.portfolio-wrapper div.portfolio-item {
   background-color: #ececec;
   float: left;
@@ -420,81 +420,84 @@ ul.portfolio-wrapper div.portfolio-item {
   border: 1px solid black;
   padding: 1rem;
 }
-/* line 219, ../scss/app-new.scss */
+/* line 220, ../scss/app-new.scss */
 ul.portfolio-wrapper div.portfolio-item .title {
   color: #923b30;
 }
-/* line 223, ../scss/app-new.scss */
+/* line 224, ../scss/app-new.scss */
 ul.portfolio-wrapper div.portfolio-item .abstract {
   width: 12em;
   margin: 10px auto;
 }
-/* line 229, ../scss/app-new.scss */
+/* line 230, ../scss/app-new.scss */
 ul.portfolio-wrapper div.portfolio-item .round img {
   width: 200px;
   height: 200px;
   border: 2px solid #ececec;
 }
 @media screen and (max-width: 1024px) {
-  /* line 208, ../scss/app-new.scss */
+  /* line 209, ../scss/app-new.scss */
   ul.portfolio-wrapper div.portfolio-item {
     width: 50%;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 208, ../scss/app-new.scss */
+  /* line 209, ../scss/app-new.scss */
   ul.portfolio-wrapper div.portfolio-item {
     width: 100%;
   }
 }
 
-/* line 250, ../scss/app-new.scss */
+/* line 251, ../scss/app-new.scss */
 ul.simple-list {
   width: 46em;
   margin-left: 2em;
   margin-bottom: 2em;
 }
-/* line 254, ../scss/app-new.scss */
+/* line 255, ../scss/app-new.scss */
 ul.simple-list li {
   position: relative;
+  min-height: 10rem;
   background-color: #ececec;
   border: 1px solid lightgrey;
   margin: 4em 1em 1em 1em;
 }
-/* line 260, ../scss/app-new.scss */
+/* line 262, ../scss/app-new.scss */
 ul.simple-list li h2 {
-  font-size: 1.5em;
+  font-size: 2em;
   position: absolute;
   top: -1em;
 }
-/* line 265, ../scss/app-new.scss */
+/* line 267, ../scss/app-new.scss */
 ul.simple-list li img {
   margin: 1em;
 }
-/* line 269, ../scss/app-new.scss */
+/* line 271, ../scss/app-new.scss */
 ul.simple-list li ul.right-list {
   float: right;
-  padding: 1em 0 0 0;
+  padding: 1em;
   width: 23em;
 }
-/* line 273, ../scss/app-new.scss */
+/* line 275, ../scss/app-new.scss */
 ul.simple-list li ul.right-list li {
+  min-height: auto;
   margin: 0 0 0em 0;
   padding-left: 0em;
   border: none;
+  font-size: 1.2em;
 }
-/* line 277, ../scss/app-new.scss */
+/* line 283, ../scss/app-new.scss */
 ul.simple-list li ul.right-list li:nth-child(2) {
   margin: 1em 0 0 0;
-  font-size: 0.8em;
+  font-size: 1em;
 }
-/* line 281, ../scss/app-new.scss */
+/* line 287, ../scss/app-new.scss */
 ul.simple-list li ul.right-list li:nth-child(3) {
   margin: 0.5em 0 0 0;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
-/* line 290, ../scss/app-new.scss */
+/* line 296, ../scss/app-new.scss */
 section.about {
   width: 50%;
   margin: 0 auto;
@@ -506,47 +509,48 @@ section.about {
   color: #923b30;
 }
 
-/* line 301, ../scss/app-new.scss */
+/* line 307, ../scss/app-new.scss */
 footer {
   background-color: #ececec;
-  height: 2.5em;
+  display: inline-block;
+  width: 100%;
   border-top: 1px solid #cdcdcd;
 }
-/* line 306, ../scss/app-new.scss */
+/* line 313, ../scss/app-new.scss */
 footer ul {
   text-align: center;
-  width: 13%;
+  width: 33%;
   margin: 0 auto;
   padding: 0.5em;
 }
 @media screen and (max-width: 1024px) {
-  /* line 306, ../scss/app-new.scss */
+  /* line 313, ../scss/app-new.scss */
   footer ul {
     width: 58%;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 306, ../scss/app-new.scss */
+  /* line 313, ../scss/app-new.scss */
   footer ul {
     width: 58%;
   }
 }
-/* line 321, ../scss/app-new.scss */
+/* line 328, ../scss/app-new.scss */
 footer ul li {
-  width: 49%;
   float: left;
   font-style: italic;
   font-size: 1em;
+  margin-right: 1rem;
 }
-/* line 322, ../scss/app-new.scss */
+/* line 329, ../scss/app-new.scss */
 footer ul li:first-child {
   text-align: left;
 }
-/* line 326, ../scss/app-new.scss */
+/* line 333, ../scss/app-new.scss */
 footer ul li:nth-child(2) {
   text-align: right;
 }
-/* line 337, ../scss/app-new.scss */
+/* line 345, ../scss/app-new.scss */
 footer .copyright {
   display: block;
   width: 100%;

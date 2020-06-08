@@ -6,6 +6,7 @@
 body {
     font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
     line-height: normal;
+
 }
 
 a {
@@ -253,12 +254,13 @@ ul.simple-list {
     margin-bottom:2em;
     li {
         position:relative;
+        min-height: 10rem;
 
         background-color: #ececec;
         border: 1px solid lightgrey;
         margin: 4em 1em 1em 1em;
         h2 {
-            font-size: 1.5em;
+            font-size: 2em;
             position: absolute;
             top: -1em;
         }
@@ -268,19 +270,23 @@ ul.simple-list {
 
         ul.right-list {
             float:right;
-            padding:1em 0 0 0;
+            padding:1em;
             width:23em;
             li {
+                min-height: auto;
+
                 margin:0 0 0em 0;
                 padding-left:0em;
                 border:none;
+                font-size: 1.2em;;
+
                 &:nth-child(2) {
                     margin:1em 0 0 0;
-                    font-size: 0.8em;;
+                    font-size: 1em;;
                 }
                 &:nth-child(3) {
                     margin:0.5em 0 0 0;
-                    font-size: 0.8em;;
+                    font-size: 1em;;
                 }
             }
         }
@@ -300,12 +306,13 @@ section.about {
 
 footer {
     background-color: $bg-primary-color;
-    height: 2.5em;
-    border-top: 1px solid $bg-secondary-color;
+    display: inline-block;
+    width: 100%;
+        border-top: 1px solid $bg-secondary-color;
 
     ul {
         text-align: center;
-        width: 13%;
+        width: 33%;
 
         @media screen and (max-width: $medium-breakpoint) {
             width: 58%;
@@ -327,10 +334,11 @@ footer {
                 text-align: right;
             }
 
-            width: 49%;
+            // width: 49%;
             float: left;
             font-style: italic;
             font-size: 1em;
+            margin-right:1rem;
         }
     }
 
