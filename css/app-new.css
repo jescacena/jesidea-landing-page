@@ -450,54 +450,31 @@ ul.portfolio-wrapper div.portfolio-item .round img {
 
 /* line 251, ../scss/app-new.scss */
 ul.simple-list {
-  width: 46em;
-  margin-left: 2em;
-  margin-bottom: 2em;
+  display: inline-block;
+  margin: 1em 2em 1em 2em;
 }
 /* line 255, ../scss/app-new.scss */
 ul.simple-list li {
   position: relative;
   min-height: 10rem;
-  background-color: #ececec;
-  border: 1px solid lightgrey;
   margin: 4em 1em 1em 1em;
 }
-/* line 262, ../scss/app-new.scss */
+/* line 259, ../scss/app-new.scss */
 ul.simple-list li h2 {
   font-size: 2em;
   position: absolute;
   top: -1em;
 }
-/* line 267, ../scss/app-new.scss */
+/* line 264, ../scss/app-new.scss */
 ul.simple-list li img {
   margin: 1em;
 }
-/* line 271, ../scss/app-new.scss */
-ul.simple-list li ul.right-list {
-  float: right;
-  padding: 1em;
-  width: 23em;
-}
-/* line 275, ../scss/app-new.scss */
-ul.simple-list li ul.right-list li {
-  min-height: auto;
-  margin: 0 0 0em 0;
-  padding-left: 0em;
-  border: none;
-  font-size: 1.2em;
-}
-/* line 283, ../scss/app-new.scss */
-ul.simple-list li ul.right-list li:nth-child(2) {
-  margin: 1em 0 0 0;
-  font-size: 1em;
-}
-/* line 287, ../scss/app-new.scss */
-ul.simple-list li ul.right-list li:nth-child(3) {
-  margin: 0.5em 0 0 0;
-  font-size: 1em;
+/* line 268, ../scss/app-new.scss */
+ul.simple-list li jwc-project-card .container {
+  background-color: #ececec;
 }
 
-/* line 296, ../scss/app-new.scss */
+/* line 274, ../scss/app-new.scss */
 section.about {
   width: 50%;
   margin: 0 auto;
@@ -509,14 +486,14 @@ section.about {
   color: #923b30;
 }
 
-/* line 307, ../scss/app-new.scss */
+/* line 285, ../scss/app-new.scss */
 footer {
   background-color: #ececec;
   display: inline-block;
   width: 100%;
   border-top: 1px solid #cdcdcd;
 }
-/* line 313, ../scss/app-new.scss */
+/* line 291, ../scss/app-new.scss */
 footer ul {
   text-align: center;
   width: 33%;
@@ -524,33 +501,33 @@ footer ul {
   padding: 0.5em;
 }
 @media screen and (max-width: 1024px) {
-  /* line 313, ../scss/app-new.scss */
+  /* line 291, ../scss/app-new.scss */
   footer ul {
     width: 58%;
   }
 }
 @media screen and (max-width: 640px) {
-  /* line 313, ../scss/app-new.scss */
+  /* line 291, ../scss/app-new.scss */
   footer ul {
     width: 58%;
   }
 }
-/* line 328, ../scss/app-new.scss */
+/* line 306, ../scss/app-new.scss */
 footer ul li {
   float: left;
   font-style: italic;
   font-size: 1em;
   margin-right: 1rem;
 }
-/* line 329, ../scss/app-new.scss */
+/* line 307, ../scss/app-new.scss */
 footer ul li:first-child {
   text-align: left;
 }
-/* line 333, ../scss/app-new.scss */
+/* line 311, ../scss/app-new.scss */
 footer ul li:nth-child(2) {
   text-align: right;
 }
-/* line 345, ../scss/app-new.scss */
+/* line 323, ../scss/app-new.scss */
 footer .copyright {
   display: block;
   width: 100%;

@@ -62,7 +62,7 @@
                 "url": "http://intercambiador.cercemap.org/"
             },
             {
-                "type": "website",
+                "type": "github-repo",
                 "url": "https://github.com/jescacena/mordorg-public-transport"
             }
         ]
@@ -77,7 +77,7 @@
                 "url": "https://cercemap.org"
             },
             {
-                "type": "website",
+                "type": "github-repo",
                 "url": "https://github.com/jescacena/mordorg"
             }
         ]

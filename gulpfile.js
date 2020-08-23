@@ -5,7 +5,8 @@ var prompt = require('gulp-prompt');
 var gutil = require('gulp-util');
 var minifyCss = require('gulp-minify-css');
 var useref = require('gulp-useref');
-var uglify = require('gulp-uglify');
+var uglify = require('gulp-uglify-es').default;
+// var uglify = require('gulp-uglify');
 var hash = require('gulp-hash');
 var imagemin = require('gulp-imagemin');
 var fs = require('fs');
@@ -15,11 +16,12 @@ var replace = require('gulp-replace');
 var revReplace = require('gulp-rev-replace');
 var rev = require('gulp-rev');
 var filter = require('gulp-filter');
+var babel = require('gulp-babel');
 var runSequence = require('run-sequence');
 
 
 gulp.task("build-assets", function() {
-  var jsFilter = filter("js/**/*.js", { restore: true });
+  var jsFilter = filter(["js/*.js"], { restore: true });
   var cssFilter = filter("css/**/*.css", { restore: true });
   var nonIndexHtmlFilter = filter(['**/*', '!**/index.html'], { restore: true });
 
@@ -38,10 +40,19 @@ gulp.task("build-assets", function() {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('js-libs-copy', function() {
-    return gulp.src(['bower_components/jquery/dist/jquery.min.js',
-    'bower_components/foundation/js/foundation.min.js'])
+gulp.task('js-libs-copy', ['js-jesidea-wc-lib-copy'], function() {
+    return gulp.src([
+        'bower_components/jquery/dist/jquery.min.js',
+        'bower_components/foundation/js/foundation.min.js',
+    ])
         .pipe(gulp.dest('dist/js'));
+});
+
+gulp.task('js-jesidea-wc-lib-copy', function() {
+    return gulp.src([
+        'js/jesidea-wc/index.bundled.js',
+    ])
+        .pipe(gulp.dest('dist/js/jesidea-wc'));
 });
 
 gulp.task('image-build', function() {
@@ -66,8 +77,9 @@ gulp.task('build:dist', ['build-assets', 'js-libs-copy', 'image-build','data-cop
 
 });
 
-gulp.task('deploy', ['build:dist'], function () {
-    return gulp.src('/')//it may be anything
+gulp.task('deploy', function () {
+// gulp.task('deploy', ['build:dist'], function () {
+    return gulp.src('/')
         .pipe(prompt.prompt({
             type: 'password',
             name: 'pass',

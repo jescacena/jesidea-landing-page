@@ -249,15 +249,12 @@ ul.portfolio-wrapper {
 }
 
 ul.simple-list {
-    width: 46em;
-    margin-left:2em;
-    margin-bottom:2em;
+    // width: 46em;
+    display: inline-block;
+    margin:1em 2em 1em 2em;
     li {
         position:relative;
         min-height: 10rem;
-
-        background-color: #ececec;
-        border: 1px solid lightgrey;
         margin: 4em 1em 1em 1em;
         h2 {
             font-size: 2em;
@@ -268,27 +265,8 @@ ul.simple-list {
             margin:1em;
         }
 
-        ul.right-list {
-            float:right;
-            padding:1em;
-            width:23em;
-            li {
-                min-height: auto;
-
-                margin:0 0 0em 0;
-                padding-left:0em;
-                border:none;
-                font-size: 1.2em;;
-
-                &:nth-child(2) {
-                    margin:1em 0 0 0;
-                    font-size: 1em;;
-                }
-                &:nth-child(3) {
-                    margin:0.5em 0 0 0;
-                    font-size: 1em;;
-                }
-            }
+        jwc-project-card .container {
+            background-color: #ececec;
         }
     }
 }

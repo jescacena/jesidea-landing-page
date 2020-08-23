@@ -4,8 +4,19 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- build:css css/app-new.css -->
-
         <link rel="stylesheet" href="css/app-new.css" />
+        <!-- endbuild -->
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/jesidea-wc/dist/assets/jwc-base.css"
+        />
+
         <link
             rel="apple-touch-icon"
             sizes="57x57"
@@ -81,8 +92,6 @@
             href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
 
-        <!-- endbuild -->
-
         <title>JesIdea</title>
     </head>
 
@@ -98,19 +107,18 @@
             </nav>
         </header>
 
-        <main id="container">
-        </main>
+        <main id="container"></main>
 
         <footer>
             <ul>
                 <li>
-                        <!-- ©Copyright JES 2018 -->
-                        ©Copyright Javier Escacena
-                        <script>
-                            var currentYear = new Date().getFullYear();
-                            document.write(currentYear);
-                        </script>
-                        , All Rights Reserved.
+                    <!-- ©Copyright JES 2018 -->
+                    ©Copyright Javier Escacena
+                    <script>
+                        var currentYear = new Date().getFullYear();
+                        document.write(currentYear);
+                    </script>
+                    , All Rights Reserved.
                 </li>
                 <li>
                     <i class="fa fa-github" aria-hidden="true"></i>
@@ -127,7 +135,6 @@
                     >
                 </li>
             </ul>
-
         </footer>
 
         <script
@@ -135,21 +142,21 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"
         ></script>
         <script type="text/javascript">
-            $(function() {
-                $('a[href*="#"]:not([href="#"])').click(function() {
+            $(function () {
+                $('a[href*="#"]:not([href="#"])').click(function () {
                     if (
-                        location.pathname.replace(/^\//, '') ==
-                            this.pathname.replace(/^\//, '') &&
+                        location.pathname.replace(/^\//, "") ==
+                            this.pathname.replace(/^\//, "") &&
                         location.hostname == this.hostname
                     ) {
                         var target = $(this.hash);
                         target = target.length
                             ? target
-                            : $('[name=' + this.hash.slice(1) + ']');
+                            : $("[name=" + this.hash.slice(1) + "]");
                         if (target.length) {
-                            $('html, body').animate(
+                            $("html, body").animate(
                                 {
-                                    scrollTop: target.offset().top
+                                    scrollTop: target.offset().top,
                                 },
                                 1000
                             );
@@ -163,5 +170,14 @@
         <!-- build:js js/app.js -->
         <script type="text/javascript" src="js/app.js"></script>
         <!-- endbuild -->
+
+        <!-- <script
+            type="module"
+            src="https://unpkg.com/jesidea-wc/dist/index.bundled.js"
+        ></script> -->
+
+        <script type="module" src="js/jesidea-wc/index.bundled.js"></script>
+
+        <!-- <script type="module" src='./node_modules/jesidea-wc/lib/index.bundled.js'></script> -->
     </body>
 </html>
