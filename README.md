@@ -1,60 +1,44 @@
 # Jesidea landing page
- * [JESIDEA](http://jesidea.com)
 
-## Requirements
+ [http://jesidea.com](http://jesidea.com)
+
+## Install Requirements
 
   * Ruby 1.9+
-  * [Node.js v11.8.0](http://nodejs.org) & npm
+  * [Node.js](http://nodejs.org) & npm
   * [compass](http://compass-style.org/): `gem install compass`
   * [bower](http://bower.io): `npm install bower -g`
+  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
+  * Run `bower install` to install the latest version of Foundation
 
-## Quickstart
+## Local development
 
-  * Run `sudo npm install` to install npm packages
-  * Run `bower install` to install bower dependencies
 
-Then when you're working on your project, just run the following command to compile SASS files into css:
+Run local server
 ```bash
-compass watch
+npm run start
 ```
-Run local web server with
+
+Run sass compiler in watch mode:
 ```bash
-php -S localhost:8080
+npm run compile-styles:watch
+```
+
+
+## Build release
+
+Set Node to 11.8.0
+
+```bash
+gulp build:dist
 ```
 
 ## Deploy
+
+Set Node to 11.8.0
 
 ```bash
 gulp deploy
 ```
 
 
-# Foundation Compass Template
-
-The easiest way to get started with Foundation + Compass.
-
-## Requirements
-
-  * Ruby 1.9+
-  * [Node.js](http://nodejs.org) & npm
-  * [compass](http://compass-style.org/): `gem install compass`
-  * [bower](http://bower.io): `npm install bower -g`
-
-## Quickstart
-
-  * [Download this starter compass project and unzip it](https://github.com/zurb/foundation-compass-template/archive/master.zip)
-  * Run `bower install` to install the latest version of Foundation
-
-Then when you're working on your project, just run the following command:
-
-```bash
-bundle exec compass watch
-```
-
-## Upgrading
-
-If you'd like to upgrade to a newer version of Foundation down the road just run:
-
-```bash
-bower update
-```

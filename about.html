@@ -87,13 +87,19 @@
             href="img/favicon-16x16.png"
         />
 
+        <!-- <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        /> -->
+
         <title>JesIdea</title>
     </head>
 
-    <body>
+    <body class="about-page">
         <jwc-layout-header menu-items='[{"label":"home", "url":"/home"},{"label":"about", "url":"/home/about.html"}]'></jwc-layout-header>
 
         <main id="container">
+            <jwc-user-profile></jwc-user-profile>
         </main>
 
         <jwc-layout-footer class="footer"></jwc-layout-footer>
@@ -128,17 +134,6 @@
             });
         </script>
 
-        <!-- build:js js/app.js -->
-        <script type="text/javascript" src="js/app.js"></script>
-        <!-- endbuild -->
-
-        <!-- <script
-            type="module"
-            src="https://unpkg.com/jesidea-wc/dist/index.bundled.js"
-        ></script> -->
-
         <script type="module" src="js/jesidea-wc/index.bundled.js"></script>
-
-        <!-- <script type="module" src='./node_modules/jesidea-wc/lib/index.bundled.js'></script> -->
     </body>
 </html>

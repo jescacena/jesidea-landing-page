@@ -213,7 +213,7 @@ table {
 /*generics*/
 /* line 6, ../scss/app-new.scss */
 body {
-  font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
   line-height: normal;
 }
 
@@ -222,317 +222,68 @@ a {
   text-decoration: none;
 }
 
-/* header */
-/* line 17, ../scss/app-new.scss */
-.header {
+/* line 25, ../scss/app-new.scss */
+jwc-layout-header {
+  padding: 1rem 0;
+  display: inline-block;
   width: 100%;
-  background-color: #ececec;
-  height: 2.5em;
-  border-bottom: 1px solid #cdcdcd;
-}
-/* line 23, ../scss/app-new.scss */
-.header .logo {
-  display: inline;
-}
-/* line 26, ../scss/app-new.scss */
-.header .logo img {
-  padding-top: 7px;
-  padding-left: 20px;
-}
-/* line 32, ../scss/app-new.scss */
-.header nav {
-  float: right;
-  height: 100%;
-}
-/* line 36, ../scss/app-new.scss */
-.header nav .tags li {
-  font-style: italic;
-  color: #923b30;
-  border-left: 1px solid #cdcdcd;
-  float: left;
-  height: 1.26em;
-  padding: 10px;
-  overflow: hidden;
-}
-/* line 45, ../scss/app-new.scss */
-.header nav .tags li:hover {
-  background-color: #fff;
-  border-left: 1px solid #cdcdcd;
 }
 
-/* line 63, ../scss/app-new.scss */
-ul.portfolio-wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 41px;
-  margin-left: 17rem;
-}
-@media screen and (max-width: 640px) {
-  /* line 63, ../scss/app-new.scss */
-  ul.portfolio-wrapper {
-    max-width: none;
-    margin-left: 1rem;
-  }
-}
-/* line 74, ../scss/app-new.scss */
-ul.portfolio-wrapper li.polaroid {
-  width: 19.5%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-  float: left;
-  margin-bottom: 1rem;
-}
-@media screen and (max-width: 640px) {
-  /* line 74, ../scss/app-new.scss */
-  ul.portfolio-wrapper li.polaroid {
-    width: 46.5%;
-  }
-}
-/* line 87, ../scss/app-new.scss */
-ul.portfolio-wrapper li.polaroid:not(:nth-child(4n)) {
-  margin-right: 1rem;
-}
-@media screen and (max-width: 640px) {
-  /* line 92, ../scss/app-new.scss */
-  ul.portfolio-wrapper li.polaroid:not(:nth-child(4n)) {
-    margin-right: 0;
-  }
-  /* line 95, ../scss/app-new.scss */
-  ul.portfolio-wrapper li.polaroid:not(:nth-child(2n)) {
-    margin-right: 1rem;
-  }
-}
-/* line 100, ../scss/app-new.scss */
-ul.portfolio-wrapper li.polaroid img {
-  height: 12rem;
-}
-/* line 105, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container {
-  text-align: center;
-  padding: 10px 20px;
-}
-/* line 109, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container h2 {
-  display: inline;
-  font-size: 0.8rem;
-}
-@media screen and (max-width: 640px) {
-  /* line 109, ../scss/app-new.scss */
-  ul.portfolio-wrapper div.container h2 {
-    font-size: 0.7rem;
-  }
-}
-/* line 117, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip {
-  float: right;
-  font-size: 1.2rem;
-  display: inline-block;
-  position: relative;
-}
-/* line 123, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip i {
-  color: #923b30;
-}
-/* line 127, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: #ececec;
-  color: #204CB2;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  bottom: -430%;
-  left: 50%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-  text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-@media screen and (max-width: 640px) {
-  /* line 127, ../scss/app-new.scss */
-  ul.portfolio-wrapper div.container .tooltip .tooltiptext {
-    margin-left: -100px;
-  }
-}
-/* line 156, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: -9%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #cdcdcd transparent;
-}
-@media screen and (max-width: 640px) {
-  /* line 156, ../scss/app-new.scss */
-  ul.portfolio-wrapper div.container .tooltip .tooltiptext::after {
-    left: 83%;
-  }
-}
-/* line 170, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip .tooltiptext i {
-  color: #923b30;
-}
-/* line 174, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip .tooltiptext p {
-  font-size: 0.9rem;
-  padding: 0.2rem;
-  color: #000;
-}
-/* line 180, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip .tooltiptext ul {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  top: 0.2rem;
-}
-/* line 190, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip .tooltiptext ul li {
-  float: left;
-}
-/* line 193, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip .tooltiptext ul li:not(:last-child) {
-  margin-right: 1rem;
-}
-/* line 201, ../scss/app-new.scss */
-ul.portfolio-wrapper div.container .tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-/* line 209, ../scss/app-new.scss */
-ul.portfolio-wrapper div.portfolio-item {
-  background-color: #ececec;
-  float: left;
-  width: 19.5%;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  text-align: center;
-  height: 300px;
-  border: 1px solid black;
-  padding: 1rem;
-}
-/* line 220, ../scss/app-new.scss */
-ul.portfolio-wrapper div.portfolio-item .title {
-  color: #923b30;
-}
-/* line 224, ../scss/app-new.scss */
-ul.portfolio-wrapper div.portfolio-item .abstract {
-  width: 12em;
-  margin: 10px auto;
-}
-/* line 230, ../scss/app-new.scss */
-ul.portfolio-wrapper div.portfolio-item .round img {
-  width: 200px;
-  height: 200px;
-  border: 2px solid #ececec;
-}
-@media screen and (max-width: 1024px) {
-  /* line 209, ../scss/app-new.scss */
-  ul.portfolio-wrapper div.portfolio-item {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 640px) {
-  /* line 209, ../scss/app-new.scss */
-  ul.portfolio-wrapper div.portfolio-item {
-    width: 100%;
-  }
-}
-
-/* line 251, ../scss/app-new.scss */
+/* line 31, ../scss/app-new.scss */
 ul.simple-list {
   display: inline-block;
   margin: 1em 2em 1em 2em;
 }
+
 /* line 255, ../scss/app-new.scss */
+/* line 36, ../scss/app-new.scss */
 ul.simple-list li {
   position: relative;
   min-height: 10rem;
   margin: 4em 1em 1em 1em;
 }
+
 /* line 259, ../scss/app-new.scss */
+/* line 42, ../scss/app-new.scss */
 ul.simple-list li h2 {
   font-size: 2em;
   position: absolute;
   top: -1em;
 }
+
 /* line 264, ../scss/app-new.scss */
+/* line 48, ../scss/app-new.scss */
 ul.simple-list li img {
   margin: 1em;
 }
+
 /* line 268, ../scss/app-new.scss */
+/* line 52, ../scss/app-new.scss */
 ul.simple-list li jwc-project-card .container {
   background-color: #ececec;
 }
 
-/* line 274, ../scss/app-new.scss */
-section.about {
-  width: 50%;
-  margin: 0 auto;
-  clear: both;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  border-top: 2px solid #ececec;
-  color: #923b30;
+/* line 56, ../scss/app-new.scss */
+.about-page #container {
+  margin: 2rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* line 285, ../scss/app-new.scss */
-footer {
-  background-color: #ececec;
-  display: inline-block;
-  width: 100%;
-  border-top: 1px solid #cdcdcd;
+/* line 64, ../scss/app-new.scss */
+.about-page #container jwc-user-profile {
+  margin: 28vh 0 0 8vh;
+  transform: translateY(-50%);
 }
-/* line 291, ../scss/app-new.scss */
-footer ul {
-  text-align: center;
-  width: 33%;
-  margin: 0 auto;
-  padding: 0.5em;
+
+/* line 70, ../scss/app-new.scss */
+.about-page #container jwc-user-profile .container {
+  max-width: none;
 }
-@media screen and (max-width: 1024px) {
-  /* line 291, ../scss/app-new.scss */
-  footer ul {
-    width: 58%;
-  }
-}
-@media screen and (max-width: 640px) {
-  /* line 291, ../scss/app-new.scss */
-  footer ul {
-    width: 58%;
-  }
-}
-/* line 306, ../scss/app-new.scss */
-footer ul li {
-  float: left;
-  font-style: italic;
-  font-size: 1em;
-  margin-right: 1rem;
-}
-/* line 307, ../scss/app-new.scss */
-footer ul li:first-child {
-  text-align: left;
-}
-/* line 311, ../scss/app-new.scss */
-footer ul li:nth-child(2) {
-  text-align: right;
-}
-/* line 323, ../scss/app-new.scss */
-footer .copyright {
-  display: block;
-  width: 100%;
-  text-align: center;
-  clear: both;
-  margin-top: 4em;
-  font-size: 0.7em;
+
+/* line 74, ../scss/app-new.scss */
+.footer .social-links {
+  margin-bottom: 20px !important;
 }

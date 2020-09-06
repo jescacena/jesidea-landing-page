@@ -4,50 +4,13 @@
 
 /*generics*/
 body {
-    font-family: Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
+        "Times New Roman", serif;
     line-height: normal;
-
 }
 
 a {
     text-decoration: none;
-}
-
-/* header */
-.header {
-    width: 100%;
-    background-color: $bg-primary-color;
-    height: 2.5em;
-    border-bottom: 1px solid $bg-secondary-color;
-
-    .logo {
-        display: inline;
-
-        img {
-            padding-top: 7px;
-            padding-left: 20px;
-        }
-    }
-
-    nav {
-        float: right;
-        height: 100%;
-
-        .tags li {
-            font-style: italic;
-            color: $primary-color;
-            border-left: 1px solid $bg-secondary-color;
-            float: left;
-            height: 1.26em;
-            padding: 10px;
-            overflow: hidden;
-
-            &:hover {
-                background-color: #fff;
-                border-left: 1px solid $bg-secondary-color;
-            }
-        }
-    }
 }
 
 #container {
@@ -59,273 +22,55 @@ a {
     // margin-left: -45%; /* margin is -0.5 * dimension
     // margin-top: -25%;
 }
-
-ul.portfolio-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 41px;
-    margin-left: 17rem;
-
-    @media screen and (max-width: $small-breakpoint) {
-        max-width: none;
-        margin-left: 1rem;
-    }
-
-    li.polaroid {
-        width: 19.5%;
-
-        @media screen and (max-width: $small-breakpoint) {
-            width: 46.5%;
-        }
-
-        background-color: white;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 25px;
-        float: left;
-        margin-bottom: 1rem;
-
-        &:not(:nth-child(4n)) {
-            margin-right: 1rem;
-        }
-
-        @media screen and (max-width: $small-breakpoint) {
-            &:not(:nth-child(4n)) {
-                margin-right: 0;
-            }
-            &:not(:nth-child(2n)) {
-                margin-right: 1rem;
-            }
-        }
-
-        img {
-            height: 12rem;
-        }
-    }
-
-    div.container {
-        text-align: center;
-        padding: 10px 20px;
-
-        h2 {
-            display: inline;
-			font-size: 0.8rem;
-			@media screen and (max-width: $small-breakpoint) {
-				font-size: 0.7rem;
-			}
-        }
-
-        .tooltip {
-            float: right;
-            font-size: 1.2rem;
-            display: inline-block;
-            position: relative;
-
-            i {
-                color: $primary-color;
-            }
-
-            .tooltiptext {
-                visibility: hidden;
-
-                // visibility: visible;
-                width: 120px;
-                background-color: $bg-primary-color;
-                color: $logo-color;
-                text-align: center;
-                border-radius: 6px;
-                padding: 5px 0;
-                position: absolute;
-                z-index: 1;
-                bottom: -430%;
-
-                // bottom: 125%;
-                left: 50%;
-				margin-left: -60px;
-				
-				@media screen and (max-width: $small-breakpoint) {
-					margin-left: -100px;
-				}
-
-                // opacity: 1;
-                opacity: 0;
-                transition: opacity 0.3s;
-                text-align: center;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-                // Triangulillo
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: -9%;
-					left: 50%;
-					@media screen and (max-width: $small-breakpoint) {
-						left: 83%;
-					}
-                    margin-left: -5px;
-                    border-width: 5px;
-                    border-style: solid;
-                    border-color: transparent transparent $bg-secondary-color transparent;
-                }
-
-                i {
-                    color: $primary-color;
-                }
-
-                p {
-                    font-size: 0.9rem;
-                    padding: 0.2rem;
-                    color: $dark-color;
-                }
-
-                ul {
-                    margin: 0;
-                    padding: 0;
-                    display: inline-block;
-
-                    // width: 100%;
-                    text-align: center;
-                    position: relative;
-                    top: 0.2rem;
-
-                    li {
-                        float: left;
-
-                        &:not(:last-child) {
-                            margin-right: 1rem;
-                        }
-                    }
-                }
-            }
-
-            &:hover {
-                .tooltiptext {
-                    visibility: visible;
-                    opacity: 1;
-                }
-            }
-        }
-    }
-
-    div.portfolio-item {
-        background-color: $bg-primary-color;
-        float: left;
-        width: 19.5%;
-        margin-bottom: 1rem;
-        margin-right: 1rem;
-        text-align: center;
-        height: 300px;
-        border: 1px solid black;
-        padding: 1rem;
-
-        .title {
-            color: $primary-color;
-        }
-
-        .abstract {
-            width: 12em;
-            margin: 10px auto;
-        }
-
-        .round {
-            img {
-                width: 200px;
-                height: 200px;
-
-                // border-radius: 50%;
-
-                border: 2px solid $bg-primary-color;
-            }
-        }
-
-        // @media screen and (max-width: $medium-breakpoint) {
-        @media screen and (max-width: $medium-breakpoint) {
-            width: 50%;
-        }
-
-        @media screen and (max-width: $small-breakpoint) {
-            width: 100%;
-        }
-    }
+jwc-layout-header {
+    padding: 1rem 0;
+    display: inline-block;
+    width: 100%;
 }
 
 ul.simple-list {
-    // width: 46em;
     display: inline-block;
-    margin:1em 2em 1em 2em;
-    li {
-        position:relative;
-        min-height: 10rem;
-        margin: 4em 1em 1em 1em;
-        h2 {
-            font-size: 2em;
-            position: absolute;
-            top: -1em;
-        }
-        img {
-            margin:1em;
-        }
-
-        jwc-project-card .container {
-            background-color: #ececec;
-        }
-    }
+    margin: 1em 2em 1em 2em;
+}
+/* line 255, ../scss/app-new.scss */
+ul.simple-list li {
+    position: relative;
+    min-height: 10rem;
+    margin: 4em 1em 1em 1em;
+}
+/* line 259, ../scss/app-new.scss */
+ul.simple-list li h2 {
+    font-size: 2em;
+    position: absolute;
+    top: -1em;
+}
+/* line 264, ../scss/app-new.scss */
+ul.simple-list li img {
+    margin: 1em;
+}
+/* line 268, ../scss/app-new.scss */
+ul.simple-list li jwc-project-card .container {
+    background-color: #ececec;
 }
 
-section.about {
-    width: 50%;
-    margin: 0 auto;
-    clear: both;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    border-top: 2px solid $bg-primary-color;
-    color: $primary-color;
-}
-
-footer {
-    background-color: $bg-primary-color;
-    display: inline-block;
+.about-page #container {
+    margin: 2rem auto;
     width: 100%;
-        border-top: 1px solid $bg-secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    ul {
-        text-align: center;
-        width: 33%;
+.about-page #container jwc-user-profile {
+    margin: 28vh 0 0 8vh;
+    transform: translateY(-50%);
+    // width: 60%;
+}
 
-        @media screen and (max-width: $medium-breakpoint) {
-            width: 58%;
-        }
+.about-page #container jwc-user-profile .container {
+    max-width: none;
+}
 
-        @media screen and (max-width: $small-breakpoint) {
-            width: 58%;
-        }
-
-        margin: 0 auto;
-        padding: 0.5em;
-
-        li {
-            &:first-child {
-                text-align: left;
-            }
-
-            &:nth-child(2) {
-                text-align: right;
-            }
-
-            // width: 49%;
-            float: left;
-            font-style: italic;
-            font-size: 1em;
-            margin-right:1rem;
-        }
-    }
-
-    .copyright {
-        display: block;
-        width: 100%;
-        text-align: center;
-        clear: both;
-        margin-top: 4em;
-        font-size: 0.7em;
-    }
+.footer .social-links {
+    margin-bottom: 20px !important;
 }

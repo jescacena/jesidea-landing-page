@@ -23,9 +23,9 @@ var runSequence = require('run-sequence');
 gulp.task("build-assets", function() {
   var jsFilter = filter(["js/*.js"], { restore: true });
   var cssFilter = filter("css/**/*.css", { restore: true });
-  var nonIndexHtmlFilter = filter(['**/*', '!**/index.html'], { restore: true });
+  var nonIndexHtmlFilter = filter(['**/*', '!**/*.html'], { restore: true });
 
-  return gulp.src("./index.html")
+  return gulp.src("./*.html")
     .pipe(useref())      // Concatenate with gulp-useref
     .pipe(jsFilter)
     .pipe(uglify())             // Minify any javascript sources
@@ -34,7 +34,7 @@ gulp.task("build-assets", function() {
     .pipe(minifyCss({compatibility: 'ie8'}))
     .pipe(cssFilter.restore)
     .pipe(nonIndexHtmlFilter)
-    .pipe(rev())                // Rename the concatenated files (but not index.html)
+    .pipe(rev())                // Rename the concatenated files (but not *.html)
     .pipe(nonIndexHtmlFilter.restore)
     .pipe(revReplace())         // Substitute in new filenames
     .pipe(gulp.dest('dist'));
@@ -70,7 +70,7 @@ gulp.task('data-copy', function() {
 });
 
 gulp.task('build:dist', ['build-assets', 'js-libs-copy', 'image-build','data-copy'],  function() {
-    gulp.src('dist/index.html')
+    gulp.src('dist/*.html')
         .pipe(replace('bower_components/jquery/dist/', 'js/'))
         .pipe(replace('bower_components/foundation/js/', 'js/'))
         .pipe(gulp.dest('dist'));
