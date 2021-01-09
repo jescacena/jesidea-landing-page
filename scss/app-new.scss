@@ -1,12 +1,15 @@
 @import "reset";
+@import "mixins";
 @import "settings";
 @import "lightbox";
+@import "cosmos";
 
 /*generics*/
 body {
     font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond,
         "Times New Roman", serif;
     line-height: normal;
+    background-color: black;
 }
 
 a {
@@ -26,11 +29,24 @@ jwc-layout-header {
     padding: 1rem 0;
     display: inline-block;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1111;
+    @include desktop() {
+        background-color: $bg-secondary-color;
+    }
+
 }
 
 ul.simple-list {
     display: inline-block;
-    margin: 1em 2em 1em 2em;
+    margin: 3em 2em 1em 31em;
+    width:100%;
+    @include smartphone() {
+        margin: 2em 0;
+        padding-left: 0em;
+    }
 }
 /* line 255, ../scss/app-new.scss */
 ul.simple-list li {
@@ -71,6 +87,9 @@ ul.simple-list li jwc-project-card .container {
     max-width: none;
 }
 
+jwc-layout-footer {
+    z-index: 1111;
+}
 .footer .social-links {
     margin-bottom: 20px !important;
 }

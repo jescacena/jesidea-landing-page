@@ -37,7 +37,7 @@ h4 {
 /* line 31, ../scss/_custom.scss */
 .main-container {
   background: #FFFFFF;
-  border: 1px solid #3C60B3;
+  border: 1px solid #D8B98D;
   border-radius: 10px 10px 10px 10px;
   -moz-border-radius: 10px 10px 10px 10px;
   -webkit-border-radius: 10px 10px 10px 10px;
@@ -52,7 +52,7 @@ h4 {
 
 /* line 46, ../scss/_custom.scss */
 .top-bar {
-  background: #3C60B3;
+  background: #D8B98D;
   border-radius: 10px 10px 10px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
   -webkit-border-radius: 10px 10px 0px 0px;
@@ -90,7 +90,7 @@ span.logo-right {
 /* line 77, ../scss/_custom.scss */
 .link-top-menu {
   color: #FFFFFF !important;
-  background-color: #3C60B3 !important;
+  background-color: #D8B98D !important;
 }
 
 /* line 82, ../scss/_custom.scss */
