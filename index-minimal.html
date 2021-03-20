@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- build:css css/app-new.css -->
-        <link rel="stylesheet" href="css/app-new.css" />
+        <!-- build:css css/landing-minimal.css -->
+        <link rel="stylesheet" href="css/landing-minimal.css" />
         <!-- endbuild -->
 
         <link
@@ -87,24 +87,21 @@
             href="img/favicon-16x16.png"
         />
 
-        <!-- <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        /> -->
-
         <title>JesIdea</title>
     </head>
 
-    <body class="about-page">
+    <body>
         <jwc-layout-header
             menu-items='[{"label":"home", "url":"/home"},{"label":"blog", "url":"/home/blog.html"},{"label":"about", "url":"/home/about.html"}]'
         >
         </jwc-layout-header>
-        <main id="container" style="background-color:#ececec">
-            <jwc-user-profile></jwc-user-profile>
+
+        <main id="container">
         </main>
 
-        <jwc-layout-footer class="footer"></jwc-layout-footer>
+        <jwc-layout-footer
+            class="footer">
+        </jwc-layout-footer>
 
         <script
             type="text/javascript"
@@ -136,6 +133,17 @@
             });
         </script>
 
+        <!-- build:js js/app.js -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- endbuild -->
+
+        <!-- <script
+            type="module"
+            src="https://unpkg.com/jesidea-wc/dist/index.bundled.js"
+        ></script> -->
+
         <script type="module" src="js/jesidea-wc/index.bundled.js"></script>
+
+        <!-- <script type="module" src='./node_modules/jesidea-wc/lib/index.bundled.js'></script> -->
     </body>
 </html>

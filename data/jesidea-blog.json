@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Flutter visto con gafas de programador web",
+        "image": "https://www.paradigmadigital.com/assets/img/resize/huge/0a35cd4992c84980a23acd2f909b1c16.png",
+        "description": "Del creador de Desarrollando aplicaciones móviles nativas con React Native, ahora llega un nuevo post sobre tecnologías cross-platform desde la visión de un programador web. En este caso analizamos Flutter.",
+        "url": "https://www.paradigmadigital.com/dev/flutter-visto-con-gafas-programador-web/",
+        "date": "01-04-2020",
+        "tags": "Flutter, Cross-Platform, Mobile app development"
+    },
+    {
+        "title": "Desarrollando aplicaciones móviles nativas con React Native",
+        "image": "https://www.paradigmadigital.com/wp-content/uploads/2018/06/app-nativas-react-native-5.png",
+        "description": "Los desarrolladores front normalmente trabajamos dentro del ecosistema de los navegadores web. Por lo general, el desarrollo de aplicaciones móviles nativas ha sido un mundo aparte para nosotros.",
+        "url": "https://www.paradigmadigital.com/dev/desarrollando-aplicaciones-moviles-nativas-con-react-native/",
+        "date": "01-01-2019",
+        "tags": "React Native, Cross-Platform, Mobile app development"
+    }
+]

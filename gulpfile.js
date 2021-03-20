@@ -77,8 +77,8 @@ gulp.task('build:dist', ['build-assets', 'js-libs-copy', 'image-build','data-cop
 
 });
 
-gulp.task('deploy', function () {
-// gulp.task('deploy', ['build:dist'], function () {
+// gulp.task('deploy', function () {
+gulp.task('deploy', ['build:dist'], function () {
     return gulp.src('/')
         .pipe(prompt.prompt({
             type: 'password',

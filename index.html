@@ -3,19 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- build:css css/app-new.css -->
-        <link rel="stylesheet" href="css/app-new.css" />
-        <!-- endbuild -->
-
         <link
             href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
             rel="stylesheet"
         />
 
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/jesidea-wc/dist/assets/jwc-base.css"
-        />
+        <!-- build:css css/widget-spinner.css -->
+        <link rel="stylesheet" href="css/widget-spinner.css" />
+        <!-- endbuild -->
 
         <link
             rel="apple-touch-icon"
@@ -92,202 +87,93 @@
 
     <body>
         <jwc-layout-header
-            menu-items='[{"label":"home", "url":"/home"},{"label":"about", "url":"/home/about.html"}]'>
+            menu-items='[{"label":"home", "url":"/home"},{"label":"about", "url":"/home/about.html"}]'
+        >
         </jwc-layout-header>
 
-        <main id="container">
-
-            <div class="cosmos-wrap">
-                <div class="background-stars-wrap">
-                  <div class="bg-star-1"></div>
-                  <div class="bg-star-2"></div>
-                  <div class="bg-star-3"></div>
-                  <div class="bg-star-4"></div>
-                  <div class="bg-star-5"></div>
-                  <div class="bg-star-6"></div>
-                  <div class="bg-star-7"></div>
-                  <div class="bg-star-8"></div>
-                  <div class="bg-star-9"></div>
-                  <div class="bg-star-10"></div>
-                  <div class="bg-star-11"></div>
-                  <div class="bg-star-12"></div>
-                  <div class="bg-star-13"></div>
-                  <div class="bg-star-14"></div>
-                  <div class="bg-star-15"></div>
-                  <div class="bg-star-16"></div>
-                  <div class="bg-star-17"></div>
-                  <div class="bg-star-18"></div>
-                  <div class="bg-star-19"></div>
-                  <div class="bg-star-20"></div>
-                  <div class="bg-star-21"></div>
-                  <div class="bg-star-22"></div>
-                  <div class="bg-star-23"></div>
-                  <div class="bg-star-24"></div>
-                  <div class="bg-star-25"></div>
-                  <div class="bg-star-26"></div>
-                  <div class="bg-star-27"></div>
-                  <div class="bg-star-28"></div>
-                  <div class="bg-star-29"></div>
-                  <div class="bg-star-30"></div>
-                  <div class="bg-star-31"></div>
-                  <div class="bg-star-32"></div>
-                  <div class="bg-star-33"></div>
-                  <div class="bg-star-34"></div>
-                  <div class="bg-star-35"></div>
-                  <div class="bg-star-36"></div>
-                  <div class="bg-star-37"></div>
-                  <div class="bg-star-38"></div>
-                  <div class="bg-star-39"></div>
-                  <div class="bg-star-40"></div>
-                  <div class="bg-star-41"></div>
-                  <div class="bg-star-42"></div>
-                  <div class="bg-star-43"></div>
-                  <div class="bg-star-44"></div>
-                  <div class="bg-star-45"></div>
-                  <div class="bg-star-46"></div>
-                  <div class="bg-star-47"></div>
-                  <div class="bg-star-48"></div>
-                  <div class="bg-star-49"></div>
-                  <div class="bg-star-50"></div>
-                  <div class="bg-star-51"></div>
-                  <div class="bg-star-52"></div>
-                  <div class="bg-star-53"></div>
-                  <div class="bg-star-54"></div>
-                  <div class="bg-star-55"></div>
-                  <div class="bg-star-56"></div>
-                  <div class="bg-star-57"></div>
-                  <div class="bg-star-58"></div>
-                  <div class="bg-star-59"></div>
-                  <div class="bg-star-60"></div>
-                  <div class="bg-star-61"></div>
-                  <div class="bg-star-62"></div>
-                  <div class="bg-star-63"></div>
-                  <div class="bg-star-64"></div>
-                  <div class="bg-star-65"></div>
-                  <div class="bg-star-66"></div>
-                  <div class="bg-star-67"></div>
-                  <div class="bg-star-68"></div>
-                  <div class="bg-star-69"></div>
-                  <div class="bg-star-70"></div>
-                  <div class="bg-star-71"></div>
-                  <div class="bg-star-72"></div>
-                  <div class="bg-star-73"></div>
-                  <div class="bg-star-74"></div>
-                  <div class="bg-star-75"></div>
-                  <div class="bg-star-76"></div>
-                  <div class="bg-star-77"></div>
-                  <div class="bg-star-78"></div>
-                  <div class="bg-star-79"></div>
-                  <div class="bg-star-80"></div>
-                  <div class="bg-star-81"></div>
-                  <div class="bg-star-82"></div>
-                  <div class="bg-star-83"></div>
-                  <div class="bg-star-84"></div>
-                  <div class="bg-star-85"></div>
-                  <div class="bg-star-86"></div>
-                  <div class="bg-star-87"></div>
-                  <div class="bg-star-88"></div>
-                  <div class="bg-star-89"></div>
-                  <div class="bg-star-90"></div>
-                  <div class="bg-star-91"></div>
-                  <div class="bg-star-92"></div>
-                  <div class="bg-star-93"></div>
-                  <div class="bg-star-94"></div>
-                  <div class="bg-star-95"></div>
-                  <div class="bg-star-96"></div>
-                  <div class="bg-star-97"></div>
-                  <div class="bg-star-98"></div>
-                  <div class="bg-star-99"></div>
-                  <div class="bg-star-100"></div>
+        <main id="widget-spinner-container">
+            <div id="title">Expands when you hover over it</div>
+            <div class="flower">
+                <div class="inner">
+                    <div class="spinner">
+                        <div class="child">
+                            <a
+                                class="leaf"
+                                href="index-cosmos.html"
+                                target="_blank"
+                                ><img
+                                    src="img/solar-system.png"
+                                    alt="Jesidea Solar System" />
+                                <div class="glass-holder">
+                                    <div class="counterspin">
+                                        <div class="glass"></div>
+                                    </div></div
+                            ></a>
+                        </div>
+                        <div class="child">
+                            <a
+                                class="leaf"
+                                href="index-minimal.html"
+                                target="_blank"
+                                ><img
+                                    src="img/caracolillo-vanilla.png"
+                                    alt="Jesidea Vanilla" />
+                                <div class="glass-holder">
+                                    <div class="counterspin">
+                                        <div class="glass"></div>
+                                    </div></div
+                            ></a>
+                        </div>
+                        <!--<div class="child">
+                            <a
+                                class="leaf"
+                                href="http://www.flickr.com/photos/the-specious"
+                                target="_blank"
+                                ><img
+                                    src="https://rawcdn.githack.com/specious/specious.github.io/08dba0c/gfx/icons/photos.svg"
+                                    alt="Flickr" />
+                                <div class="glass-holder">
+                                    <div class="counterspin">
+                                        <div class="glass"></div>
+                                    </div></div
+                            ></a>
+                        </div>
+                        <div class="child">
+                            <a
+                                class="leaf"
+                                href="https://github.com/specious"
+                                target="_blank"
+                                ><img
+                                    src="https://rawcdn.githack.com/specious/specious.github.io/08dba0c/gfx/icons/octocat.svg"
+                                    alt="GitHub" />
+                                <div class="glass-holder">
+                                    <div class="counterspin">
+                                        <div class="glass"></div>
+                                    </div></div
+                            ></a>
+                        </div>
+                        <div class="child">
+                            <a
+                                class="leaf"
+                                href="https://codepen.io/tknomad"
+                                target="_blank"
+                                ><img
+                                    src="https://rawcdn.githack.com/specious/specious.github.io/08dba0c/gfx/icons/codepen.svg"
+                                    alt="CodePen" />
+                                <div class="glass-holder">
+                                    <div class="counterspin">
+                                        <div class="glass"></div>
+                                    </div></div
+                            ></a>
+                        </div> -->
+                    </div>
+                    <div class="cover"></div>
                 </div>
-                <div class="falling-stars-wrap">
-                  <div class="falling-star1"></div>
-                  <div class="falling-star2"></div>
-                  <div class="falling-star3"></div>
-                </div>
-                <div class="star-system-wrap">
-                  <div class="star"></div>
-                  <div class="orbits-wrap">
-                    <div class="orbit-line-1">
-                      <div class="p1-wrap">
-                        <div class="planet1"></div>
-                      </div>
-                    </div>
-                    <div class="orbit-line-2">
-                      <div class="p2-wrap">
-                        <div class="planet2"></div>
-                      </div>
-                    </div>
-                    <!-- <div class="orbit-line-3">
-                      <div class="p3-wrap">
-                        <div class="planet3"></div>
-                      </div>
-                    </div>
-                    <div class="orbit-line-4">
-                      <div class="p4-wrap">
-                        <div class="planet4"></div>
-                      </div>
-                    </div>
-                    <div class="orbit-line-5">
-                      <div class="p5-wrap">
-                        <div class="planet5"></div>
-                      </div>
-                    </div>
-                    <div class="orbit-line-6">
-                      <div class="p6-wrap">
-                        <div class="planet6"></div>
-                      </div>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
+            </div>
+            <div class="credits">
+                Thanks for this widget to
+                <a href="https://codepen.io/tknomad">Ildar Sagdejev </a>
+            </div>
         </main>
-
-        <jwc-layout-footer
-            class="footer">
-        </jwc-layout-footer>
-
-        <script
-            type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.min.js"
-        ></script>
-        <script type="text/javascript">
-            $(function () {
-                $('a[href*="#"]:not([href="#"])').click(function () {
-                    if (
-                        location.pathname.replace(/^\//, "") ==
-                            this.pathname.replace(/^\//, "") &&
-                        location.hostname == this.hostname
-                    ) {
-                        var target = $(this.hash);
-                        target = target.length
-                            ? target
-                            : $("[name=" + this.hash.slice(1) + "]");
-                        if (target.length) {
-                            $("html, body").animate(
-                                {
-                                    scrollTop: target.offset().top,
-                                },
-                                1000
-                            );
-                            return false;
-                        }
-                    }
-                });
-            });
-        </script>
-
-        <!-- build:js js/app.js -->
-        <script type="text/javascript" src="js/app.js"></script>
-        <!-- endbuild -->
-
-        <!-- <script
-            type="module"
-            src="https://unpkg.com/jesidea-wc/dist/index.bundled.js"
-        ></script> -->
-
-        <script type="module" src="js/jesidea-wc/index.bundled.js"></script>
-
-        <!-- <script type="module" src='./node_modules/jesidea-wc/lib/index.bundled.js'></script> -->
     </body>
 </html>

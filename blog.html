@@ -95,13 +95,13 @@
         <title>JesIdea</title>
     </head>
 
-    <body class="about-page">
+    <body class="blog-list">
         <jwc-layout-header
             menu-items='[{"label":"home", "url":"/home"},{"label":"blog", "url":"/home/blog.html"},{"label":"about", "url":"/home/about.html"}]'
         >
         </jwc-layout-header>
-        <main id="container" style="background-color:#ececec">
-            <jwc-user-profile></jwc-user-profile>
+
+        <main id="container-blog">
         </main>
 
         <jwc-layout-footer class="footer"></jwc-layout-footer>
@@ -135,6 +135,10 @@
                 });
             });
         </script>
+
+        <!-- build:js js/app.js -->
+        <script type="text/javascript" src="js/app.js"></script>
+        <!-- endbuild -->
 
         <script type="module" src="js/jesidea-wc/index.bundled.js"></script>
     </body>

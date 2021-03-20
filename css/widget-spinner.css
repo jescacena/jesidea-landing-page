@@ -1,0 +1,300 @@
+/* line 1, ../scss/widget-spinner.scss */
+.glass {
+  background-image: radial-gradient(circle closest-side, rgba(38, 38, 38, 0.2), rgba(0, 0, 0, 0.63));
+  background-size: 100% 100%;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* line 11, ../scss/widget-spinner.scss */
+.glass::before {
+  position: absolute;
+  width: 56%;
+  height: 26%;
+  top: 4%;
+  left: 22%;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, rgba(207, 207, 207, 0.23), rgba(30, 30, 30, 0.06));
+  content: "";
+}
+
+/* line 25, ../scss/widget-spinner.scss */
+.glass::after {
+  position: absolute;
+  width: 38%;
+  height: 19%;
+  bottom: 3%;
+  left: 31%;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, rgba(93, 93, 93, 0.1), rgba(0, 0, 0, 0.18));
+  content: "";
+}
+
+/* line 39, ../scss/widget-spinner.scss */
+.flower {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+/* line 46, ../scss/widget-spinner.scss */
+.flower .spinner,
+.flower .inner,
+.flower .counterspin {
+  height: 100%;
+}
+
+/* line 51, ../scss/widget-spinner.scss */
+.flower .spinner {
+  -webkit-animation: spin 45s infinite linear;
+  animation: spin 45s infinite linear;
+}
+
+/* line 55, ../scss/widget-spinner.scss */
+.flower .counterspin {
+  -webkit-animation: counter-spin 45s infinite linear;
+  animation: counter-spin 45s infinite linear;
+}
+
+/* line 59, ../scss/widget-spinner.scss */
+.flower .cover {
+  width: 120px;
+  height: 120px;
+  background-image: url("../img/caracolillo-red-white-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0px 19px;
+  background-size: 100%;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 4px #d1d1d1, 0 0 20px 4px #000;
+  position: absolute;
+  top: 0;
+}
+
+/* line 73, ../scss/widget-spinner.scss */
+.flower a {
+  display: block;
+}
+
+/* line 76, ../scss/widget-spinner.scss */
+.flower .child {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+}
+
+/* line 83, ../scss/widget-spinner.scss */
+.flower .child .leaf {
+  height: 100%;
+  border-radius: 50%;
+  visibility: hidden;
+  transition: transform 3.2s ease-in-out;
+}
+
+/* line 89, ../scss/widget-spinner.scss */
+.flower .child .leaf img {
+  width: 64px;
+  height: 64px;
+  left: 28px;
+  top: 28px;
+  position: absolute;
+  border: none;
+}
+
+/* line 97, ../scss/widget-spinner.scss */
+.flower .child:nth-child(1) {
+  transform: rotate(-90deg);
+}
+
+/* line 100, ../scss/widget-spinner.scss */
+.flower .child:nth-child(1) .leaf {
+  background-color: #3535e0;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+
+/* line 107, ../scss/widget-spinner.scss */
+.flower .child:nth-child(1) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(90deg);
+}
+
+/* line 111, ../scss/widget-spinner.scss */
+.flower .child:nth-child(2) {
+  transform: rotate(-18deg);
+}
+
+/* line 114, ../scss/widget-spinner.scss */
+.flower .child:nth-child(2) .leaf {
+  background-color: #fff;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+
+/* line 121, ../scss/widget-spinner.scss */
+.flower .child:nth-child(2) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(18deg);
+}
+
+/* line 125, ../scss/widget-spinner.scss */
+.flower .child:nth-child(3) {
+  transform: rotate(54deg);
+}
+
+/* line 128, ../scss/widget-spinner.scss */
+.flower .child:nth-child(3) .leaf {
+  background-color: #00bd00;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+
+/* line 135, ../scss/widget-spinner.scss */
+.flower .child:nth-child(3) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(-54deg);
+}
+
+/* line 139, ../scss/widget-spinner.scss */
+.flower .child:nth-child(4) {
+  transform: rotate(126deg);
+}
+
+/* line 142, ../scss/widget-spinner.scss */
+.flower .child:nth-child(4) .leaf {
+  background-color: #ff0;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+
+/* line 149, ../scss/widget-spinner.scss */
+.flower .child:nth-child(4) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(-126deg);
+}
+
+/* line 153, ../scss/widget-spinner.scss */
+.flower .child:nth-child(5) {
+  transform: rotate(198deg);
+}
+
+/* line 156, ../scss/widget-spinner.scss */
+.flower .child:nth-child(5) .leaf {
+  background-color: #ebe8e8;
+  background-size: 100%;
+  opacity: 0.94;
+  transition: transform 3.2s ease-in-out, box-shadow 0.16s ease-in-out, visibility 3.2s linear;
+}
+
+/* line 163, ../scss/widget-spinner.scss */
+.flower .child:nth-child(5) .leaf .glass-holder {
+  height: 100%;
+  transform: rotate(-198deg);
+}
+
+/* line 167, ../scss/widget-spinner.scss */
+.flower .glass {
+  height: 100%;
+  transition: transform 3.2s ease-in-out;
+}
+
+/* line 171, ../scss/widget-spinner.scss */
+.flower:hover {
+  transform: scale(3.4);
+}
+
+/* line 174, ../scss/widget-spinner.scss */
+.flower:hover .inner {
+  transform: scale(0.29412);
+}
+
+/* line 177, ../scss/widget-spinner.scss */
+.flower:hover .leaf {
+  visibility: visible;
+  transform: rotate(720deg) translateX(144px) rotate(2250deg);
+}
+
+/* line 181, ../scss/widget-spinner.scss */
+.flower:hover .leaf:hover {
+  box-shadow: 0 0 34px #d3d9ff, 0 0 0 1px #000, inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* line 185, ../scss/widget-spinner.scss */
+.flower:hover .leaf .glass {
+  transform: rotate(-2970deg);
+}
+
+/* line 188, ../scss/widget-spinner.scss */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 192, ../scss/widget-spinner.scss */
+body {
+  background-color: #02102c;
+  background-image: linear-gradient(135deg, #000080 10%, #000 90%);
+  background-size: cover;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+/* line 204, ../scss/widget-spinner.scss */
+a {
+  outline: 0;
+}
+
+/* line 207, ../scss/widget-spinner.scss */
+#title {
+  color: #ddd;
+  font-size: 18px;
+  position: fixed;
+  bottom: 10px;
+  left: 14px;
+}
+
+/* line 214, ../scss/widget-spinner.scss */
+.credits {
+  color: #ddd;
+  font-size: 18px;
+  position: fixed;
+  bottom: 10px;
+  right: 14px;
+}
+/* line 221, ../scss/widget-spinner.scss */
+.credits a {
+  color: yellow;
+}
+
+@-webkit-keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+@-webkit-keyframes counter-spin {
+  to {
+    transform: rotate(-1turn);
+  }
+}
+@keyframes counter-spin {
+  to {
+    transform: rotate(-1turn);
+  }
+}

@@ -1975,14 +1975,14 @@ jwc-layout-header {
   }
 }
 
-/* line 42, ../scss/app-new.scss */
+/* line 41, ../scss/app-new.scss */
 ul.simple-list {
   display: inline-block;
   margin: 3em 2em 1em 31em;
   width: 100%;
 }
 @media (min-width: 320px) and (max-width: 783px) {
-  /* line 42, ../scss/app-new.scss */
+  /* line 41, ../scss/app-new.scss */
   ul.simple-list {
     margin: 2em 0;
     padding-left: 0em;
@@ -1990,7 +1990,7 @@ ul.simple-list {
 }
 
 /* line 255, ../scss/app-new.scss */
-/* line 52, ../scss/app-new.scss */
+/* line 51, ../scss/app-new.scss */
 ul.simple-list li {
   position: relative;
   min-height: 10rem;
@@ -1998,7 +1998,7 @@ ul.simple-list li {
 }
 
 /* line 259, ../scss/app-new.scss */
-/* line 58, ../scss/app-new.scss */
+/* line 57, ../scss/app-new.scss */
 ul.simple-list li h2 {
   font-size: 2em;
   position: absolute;
@@ -2006,18 +2006,18 @@ ul.simple-list li h2 {
 }
 
 /* line 264, ../scss/app-new.scss */
-/* line 64, ../scss/app-new.scss */
+/* line 63, ../scss/app-new.scss */
 ul.simple-list li img {
   margin: 1em;
 }
 
 /* line 268, ../scss/app-new.scss */
-/* line 68, ../scss/app-new.scss */
+/* line 67, ../scss/app-new.scss */
 ul.simple-list li jwc-project-card .container {
   background-color: #ececec;
 }
 
-/* line 72, ../scss/app-new.scss */
+/* line 71, ../scss/app-new.scss */
 .about-page #container {
   margin: 2rem auto;
   width: 100%;
@@ -2026,23 +2026,41 @@ ul.simple-list li jwc-project-card .container {
   align-items: center;
 }
 
-/* line 80, ../scss/app-new.scss */
+/* line 79, ../scss/app-new.scss */
 .about-page #container jwc-user-profile {
   margin: 28vh 0 0 8vh;
   transform: translateY(-50%);
 }
 
-/* line 86, ../scss/app-new.scss */
+/* line 85, ../scss/app-new.scss */
 .about-page #container jwc-user-profile .container {
   max-width: none;
 }
 
-/* line 90, ../scss/app-new.scss */
+/* line 89, ../scss/app-new.scss */
+.blog-list #container-blog {
+  background-color: #ececec;
+}
+/* line 92, ../scss/app-new.scss */
+.blog-list #container-blog ul.simple-list {
+  margin: 3em 2em 1em 0em;
+}
+/* line 96, ../scss/app-new.scss */
+.blog-list #container-blog .simple-list-item {
+  margin: 4em auto;
+  width: 600px;
+  cursor: pointer;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px transparent;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px transparent;
+}
+
+/* line 109, ../scss/app-new.scss */
 jwc-layout-footer {
   z-index: 1111;
 }
 
-/* line 93, ../scss/app-new.scss */
+/* line 112, ../scss/app-new.scss */
 .footer .social-links {
   margin-bottom: 20px !important;
 }
